@@ -1,0 +1,28 @@
+[https://www.flowerbrackets.com/java-program-calculate-area-of-circle/](Calculate Area of Circle)
+/* 
+Here’s the formula to find area of circle,
+area = pi * r * r
+where r is the radius of a circle.
+*/
+
+Here’s the java program to calculate area of circle.
+
+import java.util.Scanner;
+public class CalculateAreaOfCircle
+{
+   public static void main(String[] args)
+   {
+      double radius;
+      double pi = 3.1415, area;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter radius of circle: ");
+      radius = sc.nextDouble();
+      area = pi * radius * radius;
+      System.out.println("Area of circle: " + area);
+      sc.close();
+   }
+}
+
+Output:
+Please enter radius of circle : 5
+Area of circle : 78.53750000000001
