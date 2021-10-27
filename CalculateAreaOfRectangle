@@ -1,0 +1,48 @@
+To calculate area of rectangle user will be prompted to enter the length and width of a rectangle using nextDouble() method of Scanner class.
+This length and width of a rectangle values are stored in variables “length” and “width” of data type double. 
+Then using above user entered values we calculate area of rectangle using below formula,
+
+calculate rectangle area = length * width
+
+Here's the java program.
+
+import java.util.Scanner;
+public class RectangleArea
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter length of rectangle: ");
+      double length = sc.nextDouble();
+      System.out.println("Please enter width of rectangle: ");
+      double width = sc.nextDouble();
+      double area = length * width;
+      System.out.println("Area of rectangle is: " + area);
+      sc.close();
+   }
+}
+
+Output:
+
+Please enter length of rectangle: 2
+Please enter width of rectangle: 5
+Area of rectangle is: 10.0
+
+Above program can be executed without using Scanner class
+
+class RectangleArea
+{
+   public static void main (String[] args)
+   {
+      double length = 2.0;
+      double width = 5.0;
+      double area = length * width;
+      System.out.println("Area of rectangle is: " + area);
+   }
+}
+
+Output:
+
+Area of rectangle is: 10.0
+
+[Java program to calculate area of rectangle](https://www.flowerbrackets.com/java-program-calculate-area-of-rectangle/)
