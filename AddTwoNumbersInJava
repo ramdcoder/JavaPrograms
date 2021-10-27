@@ -1,0 +1,29 @@
+In the below java program first we are taking input from user using nextInt() method of Scanner class. 
+First user enters two numbers. Then these two numbers are stored in two integer variables ‘a’ and ‘b’.
+Lastly two numbers are added using “+” operator. Let’s see sum of two numbers using Scanner or program to add two numbers taking input from user.
+
+import java.util.Scanner;
+public class AddTwoNumbers
+{
+   public static void main(String[] args)
+   {
+      int a, b, c;
+      System.out.println("Please enter two integers to add: ");
+      Scanner sc = new Scanner(System.in);
+      a = sc.nextInt();
+      b = sc.nextInt();
+      c = a + b;
+      System.out.println("Sum of two numbers = " + c);
+      sc.close();
+   }
+}
+
+
+Output:
+Please enter two integers to add: 
+95
+56
+
+Sum of two numbers = 151
+
+[https://www.flowerbrackets.com/java-program-to-add-two-numbers/](Java program to add two numbers)
