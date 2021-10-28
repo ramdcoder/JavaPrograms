@@ -10,3 +10,5 @@ Let's learn basic java programs.
 [Java convert binary to decimal](https://www.flowerbrackets.com/binary-to-decimal-java/)
 
 [System arraycopy() method in java](https://www.flowerbrackets.com/system-arraycopy-method-java/)
+
+[Binary search in java](https://www.flowerbrackets.com/binary-search-java/)
