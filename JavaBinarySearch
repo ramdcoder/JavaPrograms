@@ -20,6 +20,10 @@ Key element is less than 30. So it should exist somewhere before 30. We discard 
 This kind of search where we reduce the search space into half at each comparison is called binary search.
 We are able to reduce the search space into half only because the array is sorted. Here array must be sorted to perform binary search. Here’s binary search program in java.
 
+Binary search in java time complexity:
+
+T(n) = T(n/2) + c
+
 Now let's see binary search java code
 
 public class BinarySearchExample
