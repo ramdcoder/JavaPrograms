@@ -1,0 +1,48 @@
+Java binary search using iterative approach
+
+Now let's learn binary search in java using iterative approach
+
+public class BinaryIterativeDemo
+{
+   // here code returns index of variable y in the array else return -1
+   int searchBinary(int[] arrNum, int y)
+   {
+      int left = 0, right = arrNum.length - 1;
+      while(left <= right)
+      {
+         int m = left + (right - left) / 2;
+         // checking if variable y is present at middle
+         if(arrNum[m] == y)
+            return m;
+         // check if variable y is greater, neglect left
+         if(arrNum[m] < y)
+            left = m + 1;
+         // check if variable y is smaller, neglect right
+         else
+            right = m - 1;
+      }
+      // we come out of the loop if not present in array
+      return -1;
+   }
+   public static void main(String[] args)
+   {
+      BinaryIterativeDemo bs = new BinaryIterativeDemo();
+      int[] arrBinary = {1, 4, 6, 14, 32};
+      int x = 32;
+      int output = bs.searchBinary(arrBinary, x);
+      if(output == -1)
+      {
+         System.out.println("Sorry!!Element not present");
+      }
+      else
+      {
+         System.out.println("Element found at index " + output);
+      }
+   }
+}
+
+Output:
+
+Element found at index 4
+
+[Binary search in java](https://www.flowerbrackets.com/binary-search-java/)
