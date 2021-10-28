@@ -1,0 +1,49 @@
+Java binary search using recursion
+
+Binary search is the process of searching key element from sorted array.
+Recursion is a process where a method calls itself infinitely or continuously.
+
+Now let's see java program on binary search using recursion
+
+public class BinarySearchRecursion
+{
+   int binaryRecursion(int[] arrNum, int left, int right, int m)
+   {
+      if(right >= left)
+      {
+         int mid = left + (right - left) / 2;
+         // checking if element is present in middle
+         if(arrNum[mid] == m)
+            return mid;
+         // checking if element is small than middle element
+         if(arrNum[mid] > m)
+            return binaryRecursion(arrNum, left, mid - 1, m);
+         // if not element can only be present in right
+         return binaryRecursion(arrNum, mid + 1, right, m);
+      }
+      // we come out of the loop if not present in array
+      return -1;
+   }
+   public static void main(String[] args)
+   {
+      BinarySearchRecursion bsr = new BinarySearchRecursion();
+      int[] arrBinary = {1,4,6,14,32};
+      int num = arrBinary.length;
+      int a = 14;
+      int result = bsr.binaryRecursion(arrBinary, 0, num - 1, a);
+      if(result == -1)
+      {
+         System.out.println("Sorry!!Element is not present");
+      }
+      else
+      {
+         System.out.println("Element found at index " + result);
+      }
+   }
+}
+
+Output:
+
+Element found at index 3
+
+[Binary search in java](https://www.flowerbrackets.com/binary-search-java/)
