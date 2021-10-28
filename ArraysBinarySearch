@@ -1,0 +1,28 @@
+Binary search in java using Arrays.binarySearch() method
+
+We can also execute binary search using Arrays.binarySearch() method in java. Here's an example
+
+import java.util.Arrays;
+public class UsingArraysBinarySearch
+{
+   public static void main(String[] args)
+   {
+      int[] arrNumbers = {15,16,17,18,19};
+      int keyElement = 17;
+      int output = Arrays.binarySearch(arrNumbers, keyElement);
+      if(output < 0)
+      {
+         System.out.println("Element not found!");
+      }
+      else
+      {
+         System.out.println("Element found at index: " + output);
+      }
+   }
+}
+
+Output:
+
+Element found at index: 2
+
+[Binary search in java](https://www.flowerbrackets.com/binary-search-java/)
