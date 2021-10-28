@@ -1,0 +1,74 @@
+Arraycopy method copies an array from the specified source array, beginning at the specified position, to the specified position of the destination array.
+
+Syntax:
+
+public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length)
+
+Parameters:
+
+src: source array to be copied from.
+
+srcPos: starting position in source array.
+
+dest: destination array.
+
+destPos: starting position in destination array.
+
+length: total number of elements to be copied.
+
+Returns:
+
+This method does not return any value.
+
+Throws exception:
+
+IndexOutOfBoundsException – if copying would cause access of data outside array bounds.
+ArrayStoreException – if an element in the src array could not be stored into the dest array because of a type mismatch.
+NullPointerException – if either src or dest is null.
+
+Here’s the example on system arraycopy method in java.
+
+public class SystemArraycopyMethodExample
+{
+   public static void main(String[] args)
+   {
+      int[] arrOne = {2,4,6,8,10,12,14,16,18,20};
+      int[] arrTwo = {1,3,5,7,9,11,13,15,17,19};
+      int[] sourceArr, sourcePosition, destinationArr[], destinationPosition, len;
+      sourceArr = arrOne;
+      sourcePosition = 2;
+      destinationArr = arrTwo;
+      destinationPosition = 5;
+      len = 4;
+      // printing elements of source array
+      System.out.println("Source array : ");
+      for(int a = 0; a < arrOne.length; a++)
+         System.out.print(arrOne[a] + " ");
+      System.out.println("");
+      System.out.println("sourcePosition : " + sourcePosition);
+      // print elements of destination array
+      System.out.println("Destination array : ");
+      for(int a = 0; a < arrTwo.length; a++)
+         System.out.print(arrTwo[a] + " ");
+      System.out.println("");
+      System.out.println("destinationPosition : " + destinationPosition);
+      System.out.println("Length : " + len);
+      // system.arraycopy method in java
+      System.arraycopy(sourceArr, sourcePosition, destinationArr, destinationPosition, len);
+      // printing final array
+      System.out.println("Final array : ");
+      for(int a = 0; a < arrTwo.length; a++)
+         System.out.print(arrTwo[a] + " ");
+   }
+}
+
+Output:
+
+Source array : 2 4 6 8 10 12 14 16 18 20
+sourcePosition : 2
+Destination array : 1 3 5 7 9 11 13 15 17 19
+destinationPosition : 5
+Length : 4
+Final array : 1 3 5 7 9 6 8 10 12 19
+
+[System arraycopy() method in java](https://www.flowerbrackets.com/system-arraycopy-method-java/)
