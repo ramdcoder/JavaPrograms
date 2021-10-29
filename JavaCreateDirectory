@@ -1,0 +1,59 @@
+[How to create directory in java](https://www.flowerbrackets.com/how-to-create-directory-java/)
+
+How to create directory in java
+
+mkdir() method create single directory.
+
+import java.io.*;
+public class CreateDirectory
+{
+   public static void main(String[] args)
+   {
+      File directory = new File("D:\\DirectoryExample");
+      if(!directory.exists())
+      {
+         if(directory.mkdir())
+         {
+            System.out.println("Directory is created");
+         }
+         else
+         {
+            System.out.println("Directory not created");
+         }
+      }
+   }
+}
+
+
+Output:
+
+Directory created
+
+----------------------------------------------------------------------------------------------------
+
+mkdirs() method creates directories in java and its sub-directories together.
+
+import java.io.File;
+public class CreateDirectoryDemo
+{
+   public static void main(String[] args)
+   {
+      File directory = new File("D:\\DirectoryExample\\subdirectory1\\subdirectory2");
+      if(!directory.exists())
+      {
+         if(directory.mkdirs())
+         {
+            System.out.println("Sub directories created");
+         }
+         else
+         {
+            System.out.println("Sub directories not created");
+         }
+      }
+   }
+}
+
+
+Output:
+
+Sub directories created
