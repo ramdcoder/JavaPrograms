@@ -1,0 +1,36 @@
+[Java create new file](https://www.flowerbrackets.com/java-create-new-file/)
+
+Java create new file
+
+Let’s see an example on createNewFile() method of File class.
+
+import java.io.File;
+import java.io.IOException;
+public class CreateFileDemo
+{
+   public static void main(String[] args) throws IOException
+   {
+      try
+      {
+         File file = new File("D:\\demo.txt");
+         boolean bool = file.createNewFile();
+         if(bool)
+         {
+            System.out.println("File created successfully");
+         }
+         else
+         {
+            System.out.println("File already exists");
+         }
+      }
+      catch(IOException ex)
+      {
+         System.out.println("Exception : ");
+         ex.printStackTrace();
+      }
+   }
+}
+
+Output:
+
+File created successfully
