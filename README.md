@@ -12,3 +12,5 @@ Let's learn basic java programs.
 [System arraycopy() method in java](https://www.flowerbrackets.com/system-arraycopy-method-java/)
 
 [Binary search in java](https://www.flowerbrackets.com/binary-search-java/)
+
+[Calculate percentage in java](https://www.flowerbrackets.com/java-calculate-percentage/)
