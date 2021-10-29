@@ -1,24 +1,6 @@
+Binary search in java - is the process of searching key element from sorted array.
+
 [Binary search in java](https://www.flowerbrackets.com/binary-search-java/)
-
-Binary search is the process of searching key element from sorted array.
-
-Algorithm:
-
-Let's assume we have a sorted array of size 5. Now given an array, we have to find whether key element exist in the given array or not. 
-If key element exist in the above array, then find the index position where it exists.
-Before that we have to declare three variables start, middle element and end.
-Here to find middle element
-
-middleelement = (start + end) / 2;
-
-Let’s say key element to search is equal to 20 and we want to find whether 20 exists in the array. Clearly, if key element is equal to the middle element, our search is over. 
-Because we have found key element in the array.
-If key element is less than the middle element, then it lies before the middle element and we can discard middle element and all the elements after middle element.
-And if key element is greater than the middle then it lies after the middle element so we can discard all the elements before the middle element.
-Initially our search space was whole array. Now we compare it with the middle element which is 30.
-Key element is less than 30. So it should exist somewhere before 30. We discard all the elements after 30 and 30 as well. We need to search key element only between index 0 and 1.
-This kind of search where we reduce the search space into half at each comparison is called binary search.
-We are able to reduce the search space into half only because the array is sorted. Here array must be sorted to perform binary search. Here’s binary search program in java.
 
 Binary search in java time complexity:
 
