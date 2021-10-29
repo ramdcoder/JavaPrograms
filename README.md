@@ -14,3 +14,5 @@ Let's learn basic java programs.
 [Binary search in java](https://www.flowerbrackets.com/binary-search-java/)
 
 [Calculate percentage in java](https://www.flowerbrackets.com/java-calculate-percentage/)
+
+[Convert char array to string in java](https://www.flowerbrackets.com/convert-char-array-to-string-java/)
