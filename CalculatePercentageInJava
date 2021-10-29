@@ -1,0 +1,39 @@
+Formula to calculate percentage is,
+
+[Calculate percentage in java](https://www.flowerbrackets.com/java-calculate-percentage/)
+
+percentage = ( a / b ) * 100
+
+Here,
+
+a = marks obtained
+
+b = total marks
+
+Let’s see program to calculate percentage of marks obtained by a student.
+
+import java.util.Scanner;
+public class CalculatePercentageDemo
+{
+   public static void main(String[] args)
+   {
+      float percentage;
+      float total;
+      float marksObtained;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter marks obtained : ");
+      marksObtained = sc.nextFloat();
+      System.out.println("Please enter total : ");
+      total = sc.nextFloat();
+      percentage = (float)((marksObtained / total) * 100);
+      System.out.println("Percentage : " + percentage);
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter marks obtained : 594
+Please enter total : 600
+Percentage : 99.0
