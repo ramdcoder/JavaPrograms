@@ -1,0 +1,61 @@
+[Convert char array to string in java](https://www.flowerbrackets.com/convert-char-array-to-string-java/)
+
+Using Constructor: 
+
+public class CharArrayToString
+{
+   public static void main(String[] args)
+   {
+      char[] charArray = new char[]{'H','e','l','l','o','W','o','r','l','d'};
+      String str = new String(charArray);
+      System.out.println(str);
+   }
+}
+
+
+Output:
+
+HelloWorld
+
+------------------------------------------------------------------------------------------------------------------
+
+Using valueof() method:
+
+public class CharArrayToStringUsingValueOf
+{
+   public static void main(String[] args)
+   {
+      char[] charArray = new char[]{'H','e','l','l','o','W','o','r','l','d'};
+      String str = String.valueOf(charArray);
+      System.out.println(str);
+   }
+}
+
+
+Output:
+
+HelloWorld
+
+---------------------------------------------------------------------------------------------------------------------
+
+Using StringBuilder:
+
+public class CharArrayToStringUsingStringBuilder
+{
+   public static void main(String[] args)
+   {
+      char[] chArray = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd'};
+      StringBuilder sb = new StringBuilder();
+      for(char ch: chArray)
+      {
+         sb.append(ch);
+      }
+      String str = sb.toString();
+      System.out.println(str);
+   }
+}
+
+
+Output:
+
+Hello World
