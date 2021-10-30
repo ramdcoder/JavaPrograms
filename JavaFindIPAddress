@@ -1,0 +1,29 @@
+[Java program to find IP address of a system](https://www.flowerbrackets.com/java-program-to-find-ip-address/)
+
+Let’s learn java program to find IP address of a system.
+
+Now let’s see program to find ip address of a system.
+
+import java.net.InetAddress;
+public class IPAddressExample
+{
+   public static void main(String[] args) throws Exception 
+   {
+      /* InetAddress getLocalHost() : Returns the address 
+       * of the local host. This is achieved by retrieving 
+       * the name of the host from the system, then resolving 
+       * that name into an InetAddress. Note: The resolved 
+       * address may be cached for a short period of time.
+      */
+      InetAddress inet = InetAddress.getLocalHost();
+      // getHostAddress(): Returns the IP address string in textual presentation
+      System.out.println("IP Address is: ");
+      System.out.println(inet.getHostAddress());
+   }
+}
+
+
+Output:
+
+IP Address is:
+192.163.2.1
