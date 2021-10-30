@@ -1,0 +1,39 @@
+[Java convert date to string](https://www.flowerbrackets.com/java-date-to-string/)
+
+Let’s learn java convert date to string.
+
+Let’s see java date to string example.
+
+import java.util.Date;
+import java.text.SimpleDateFormat;
+public class DateToStringDemo
+{
+   public static void main(String[] args)
+   {
+      Date dt = new Date();
+      SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+      String strDate = sdf.format(dt);
+      System.out.println("Date format - MM/dd/yyyy to string is : " + strDate);
+      sdf = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
+      strDate = sdf.format(dt);
+      System.out.println("Date format - dd-M-yyyy hh:mm:ss to string is : " + strDate);
+      sdf = new SimpleDateFormat("dd MMMM yyyy");
+      strDate = sdf.format(dt);
+      System.out.println("Date format - dd MMMM yyyy to string is : " + strDate);
+      sdf = new SimpleDateFormat("dd MMMM yyyy zzzz");
+      strDate = sdf.format(dt);
+      System.out.println("Date format - dd MMMM yyyy zzzz to string is : " + strDate);
+      sdf = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss z");
+      strDate = sdf.format(dt);
+      System.out.println("Date format - E, dd MMM yyyy HH:mm:ss z to string is : " + strDate);
+   }
+}
+
+
+Output:
+
+Date format – MM/dd/yyyy to string is : 12/18/2018
+Date format – dd-M-yyyy hh:mm:ss to string is : 18-12-2018 02:20:35
+Date format – dd MMMM yyyy to string is : 18 December 2018
+Date format – dd MMMM yyyy zzzz to string is : 18 December 2018 India Standard Time
+Date format – E, dd MMM yyyy HH:mm:ss z to string is : Tue, 18 Dec 2018 14:20:35 IST
