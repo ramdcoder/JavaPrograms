@@ -28,3 +28,5 @@ Let's learn basic java programs.
 [Java convert decimal to hex](https://www.flowerbrackets.com/java-convert-decimal-to-hex/)
 
 [Java convert decimal to octal](https://www.flowerbrackets.com/decimal-to-octal-java/)
+
+[How to delete a directory in java](https://www.flowerbrackets.com/how-to-delete-a-directory-in-java/)
