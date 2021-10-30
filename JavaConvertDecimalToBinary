@@ -1,0 +1,36 @@
+[Java program to convert decimal number to binary](https://www.flowerbrackets.com/java-program-convert-decimal-number-to-binary/)
+
+Let’s learn java program to convert decimal number to binary.
+
+import java.util.*;
+public class DecimalToBinaryDemo
+{
+   // this function converts decimal to binary
+   static void toBinary(int num)
+   {
+      // here we are storing binary number
+      int binaryNumber[] = new int[1000];
+      // "count" variable is counter for binary array
+      int count = 0;
+      while(num > 0)
+      {
+         // storing remainder in binary array
+         binaryNumber[count] = num % 2;
+         num = num / 2;
+         count++;
+      }
+      // here we are printing binary in reverse order
+      for(int a = count - 1; a >= 0; a--)
+         System.out.print(binaryNumber[a]);
+   }
+   public static void main(String[] args)
+   {
+      int number = 20;
+      toBinary(number);
+   }
+}
+
+
+Output:
+
+10100
