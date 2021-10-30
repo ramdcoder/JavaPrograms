@@ -36,3 +36,5 @@ Let's learn basic java programs.
 [Java program to find IP address of a system](https://www.flowerbrackets.com/java-program-to-find-ip-address/)
 
 [Java program to check even or odd number](https://www.flowerbrackets.com/java-program-to-find-even-or-odd/)
+
+[Factorial program in java](https://www.flowerbrackets.com/factorial-program-in-java/)
