@@ -33,6 +33,8 @@ Let's learn basic java programs.
 
 [Java program to delete specified integer from an array](https://www.flowerbrackets.com/java-program-to-delete-specified-integer-from-array/)
 
+[Java program to print Floyd’s triangle](https://www.flowerbrackets.com/java-program-to-print-floyds-triangle/)
+
 [Java program to find IP address of a system](https://www.flowerbrackets.com/java-program-to-find-ip-address/)
 
 [Java program to check even or odd number](https://www.flowerbrackets.com/java-program-to-find-even-or-odd/)
