@@ -1,0 +1,30 @@
+[Java program to check even or odd number](https://www.flowerbrackets.com/java-program-to-find-even-or-odd/)
+
+Let’s learn java program to check even or odd number.
+
+import java.util.Scanner;
+public class FindEvenOrOdd
+{
+   public static void main(String[] args)
+   {
+      int a;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter a number to check even or odd: ");
+      a = sc.nextInt();
+      if(a % 2 == 0)
+      {
+         System.out.println("Entered number is an even number.");
+      }
+      else
+      {
+         System.out.println("Entered number is an odd number.");
+      }
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter a number to check even or odd: 5
+Entered number is an odd number.
