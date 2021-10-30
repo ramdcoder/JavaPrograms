@@ -1,0 +1,23 @@
+[Java convert decimal to octal](https://www.flowerbrackets.com/decimal-to-octal-java/)
+
+Let’s learn java convert decimal to octal.
+
+import java.util.Scanner;
+public class DecimalToOctal 
+{
+   public static void main(String[] args) 
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter decimal number: ");
+      int number = sc.nextInt();
+      String strOctal = Integer.toOctalString(number);
+      System.out.println("Octal number is: " + strOctal);
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter decimal number: 100
+Octal number is: 144
