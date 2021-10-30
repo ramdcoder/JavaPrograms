@@ -1,0 +1,23 @@
+[convert decimal to hexadecimal in java](https://www.flowerbrackets.com/java-convert-decimal-to-hex/)
+
+Let’s learn to convert decimal to hexadecimal using Integer.toHexString() method
+
+import java.util.Scanner;
+public class DecimalToHexaExample
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter decimal number: ");
+      int decimalNumber = sc.nextInt();
+      String str = Integer.toHexString(decimalNumber);
+      System.out.println("The hexadecimal value is: " + str);
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter decimal number: 12
+The hexadecimal value is: c
