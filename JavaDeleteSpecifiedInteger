@@ -1,0 +1,69 @@
+[Java program to delete specified integer from an array](https://www.flowerbrackets.com/java-program-to-delete-specified-integer-from-array/)
+
+Let’s learn java program to delete specified integer from an array.
+
+Here’s the program to delete specified integer from an array.
+
+import java.util.Scanner;
+public class DeleteSpecifiedInteger
+{
+   public static void main(String[] args)
+   {
+      int num, n, temp = 1, place = 0;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter number of elements: ");
+      num = sc.nextInt();
+      int[] arrNum = new int[num];
+      System.out.println("Please enter all the elements: ");
+      for(int a = 0; a < num; a++)
+      {
+         arrNum[a] = sc.nextInt();
+      }
+      System.out.println("Enter the element you want to delete: ");
+      n = sc.nextInt();
+      for(int a = 0; a < num; a++)
+      {
+         if(arrNum[a] == n)
+         {
+            temp = 1;
+            place = a;
+            break;
+         }
+         else
+         {
+            temp = 0;
+         }
+      }
+      if(temp == 1)
+      {
+         for(int a = place + 1; a < num; a++)
+         {
+            arrNum[a - 1] = arrNum[a];
+         }
+         System.out.println("After deleting element: ");
+         for(int a = 0; a < num - 2; a++)
+         {
+            System.out.print(arrNum[a] + ",");
+         }
+         System.out.print(arrNum[num - 2]);
+      }
+      else
+      {
+         System.out.println("Element not found!!");
+      }
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter number of elements : 5
+Please enter all the elements :
+2
+8
+4
+9
+7
+Enter the element you want to delete : 9
+After deleting element : 2,8,4,7
