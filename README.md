@@ -32,3 +32,5 @@ Let's learn basic java programs.
 [How to delete a directory in java](https://www.flowerbrackets.com/how-to-delete-a-directory-in-java/)
 
 [Java program to delete specified integer from an array](https://www.flowerbrackets.com/java-program-to-delete-specified-integer-from-array/)
+
+[Java program to find IP address of a system](https://www.flowerbrackets.com/java-program-to-find-ip-address/)
