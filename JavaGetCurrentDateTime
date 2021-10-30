@@ -1,0 +1,145 @@
+[How to get current date and time in java](https://www.flowerbrackets.com/how-to-get-current-date-time-in-java/)
+
+Let’s learn how to get current date and time in java.
+
+Using java.util.Date class:
+
+import java.util.Date;
+public class UsingDateClass
+{
+   public static void main(String[] args) 
+   {
+      Date dt = new Date();
+      System.out.println(dt);
+      long milliSeconds = System.currentTimeMillis();  
+      Date date = new Date(milliSeconds);
+      System.out.println(date); 
+   }
+}
+
+
+Output:
+
+Tue Dec 21 20:26:43 IST 2016
+Tue Dec 21 20:26:43 IST 2016
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Using java.util.Calendar class
+
+import java.util.Calendar;
+import java.util.Date;
+public class UsingCalendarClass
+{
+   public static void main(String[] args)
+   {
+      Date date = Calendar.getInstance().getTime();
+      System.out.println(date);
+   }
+}
+
+
+Output:
+
+Tue Dec 21 20:26:43 IST 2016
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Using java.time.LocalDateTime class
+
+import java.time.LocalDateTime;
+public class UsingLocalDateTime
+{
+   public static void main(String[] args)
+   {
+      System.out.println(LocalDateTime.now());
+   }
+}
+
+
+Output:
+
+2014-02-15T13:00:01.814
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Using java.time.LocalDate class
+
+import java.time.LocalDate;
+public class UsingLocalDate
+{
+   public static void main(String[] args)
+   {
+      System.out.println(LocalDate.now());
+   }
+}
+
+
+Output:
+
+2015-02-26
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Using java.text.SimpleDateFormat class
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+public class UsingSimpleDateFormat
+{
+   public static void main(String[] args)
+   {
+      SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+      Date date = new Date();
+      System.out.println(sdf.format(date));
+   }
+}
+
+
+Output:
+
+20/02/2012 13:42:40
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Using java.time.format.DateTimeFormatter class
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+public class UsingDateTimeFormatter
+{
+   public static void main(String[] args)
+   {
+      DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+      LocalDateTime ldt = LocalDateTime.now();
+      System.out.println(dtf.format(ldt));
+   }
+}
+
+
+Output:
+
+2005/05/23 18:23:14
+
+---------------------------------------------------------------------------------------------------------------------------
+
+how to get only time in java
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+public class GetOnlyTime
+{
+   public static void main(String[] args)
+   {
+      Date date = new Date();
+      SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+      System.out.println("Get only time in java- " + sdf.format(date));
+   }
+}
+
+
+Output:
+
+Get only time in java- 14:23:05
+
+[How to get current date and time in java](https://www.flowerbrackets.com/how-to-get-current-date-time-in-java/)
