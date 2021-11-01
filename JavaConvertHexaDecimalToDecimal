@@ -1,0 +1,26 @@
+[Java convert hex to decimal](https://www.flowerbrackets.com/java-convert-hex-to-decimal/)
+
+Java program to convert hexadecimal to decimal
+
+We are using Integer.parseInt() method to convert hexadecimal to decimal parses string argument as a signed integer in the radix specified by the second argument.
+
+Here’s the syntax
+
+public static int parseInt(String s, int radix) throws NumberFormatException
+
+Let’s see java program.
+
+public class ConvertHexToDecimal
+{
+   public static void main(String[] args)
+   {
+      String strHex = "b";
+      int decimal = Integer.parseInt(strHex, 16);
+      System.out.println("Decimal number : " + decimal);
+   }
+}
+
+
+Output:
+
+Decimal number : 11
