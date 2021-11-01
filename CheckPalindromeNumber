@@ -1,0 +1,40 @@
+[Java program to check if a number is palindrome or not](https://www.flowerbrackets.com/java-program-check-if-number-is-palindrome-or-not/)
+
+Java program to check if a number is palindrome or not
+
+Now let’s see program to check whether a number is palindrome or not.
+
+import java.util.Scanner;
+public class PalindromeNumberInJava
+{
+   public static void main(String[] args)
+   {
+      int remainder, reversedNumber = 0, givenNumber;
+      System.out.println("Please enter a number: ");
+      Scanner sc = new Scanner(System.in);
+      int number = sc.nextInt();
+      givenNumber = number;
+      while(number != 0)
+      {
+         remainder = number % 10;
+         reversedNumber = reversedNumber * 10 + remainder;
+         number /= 10;
+      }
+      if(givenNumber == reversedNumber)
+      {
+         System.out.println(givenNumber + " is a palindrome number.");
+      }
+      else
+      {
+         System.out.println(givenNumber + " not a palindrome number.");
+      }
+      sc.close();
+   }
+}
+
+
+Output:
+
+151
+
+151 is a palindrome number
