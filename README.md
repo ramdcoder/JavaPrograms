@@ -50,3 +50,5 @@ Let's learn basic java programs.
 [Linear search in java](https://www.flowerbrackets.com/linear-search-java/)
 
 [Java program to find transpose of a matrix](https://www.flowerbrackets.com/java-program-to-find-transpose-of-a-matrix/)
+
+[Java convert octal to decimal](https://www.flowerbrackets.com/octal-to-decimal-java/)
