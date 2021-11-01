@@ -40,3 +40,5 @@ Let's learn basic java programs.
 [Java program to check even or odd number](https://www.flowerbrackets.com/java-program-to-find-even-or-odd/)
 
 [Factorial program in java](https://www.flowerbrackets.com/factorial-program-in-java/)
+
+[Java convert hex to decimal](https://www.flowerbrackets.com/java-convert-hex-to-decimal/)
