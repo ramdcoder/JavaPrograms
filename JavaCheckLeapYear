@@ -1,0 +1,49 @@
+[Java program to find if given year is leap year](https://www.flowerbrackets.com/java-program-to-find-if-given-year-is-leap-year/)
+
+Leap year is a year where it has 366 days.
+
+import java.util.Scanner;
+public class LeapYearDemo
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter any year: ");
+      int year = sc.nextInt();
+      boolean temp = false;
+      if(year % 400 == 0)
+      {
+         temp = true;
+      }
+      else if(year % 100 == 0)
+      {
+         temp = false;
+      }
+      else if(year % 4 == 0)
+      {
+         temp = true;
+      }
+      else
+      {
+         temp = false;
+      }
+      if(temp)
+      {
+         System.out.println("Year " + year + " is a Leap Year");
+      }
+      else
+      {
+         System.out.println("Year " + year + " is not a Leap Year");
+      }
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter any year: 2007
+Year 2007 is not a Leap Year
+
+Please enter any year: 2016
+Year 2016 is a Leap Year
