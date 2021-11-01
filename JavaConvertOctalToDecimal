@@ -1,0 +1,23 @@
+[Java convert octal to decimal](https://www.flowerbrackets.com/octal-to-decimal-java/)
+
+Java convert octal to decimal
+
+To convert octal to decimal use parseInt() method of Integer class. Syntax for Integer.parseInt() method is as follows
+
+public static int parseInt(String s, int radix) throws NumberFormatException
+
+public class OctalToDecimalDemo
+{
+   public static void main(String[] args)
+   {
+      String strOctal = "141";
+      // converting octal to decimal number using Integer.parseInt() method
+      int decimal = Integer.parseInt(strOctal, 8);
+      System.out.println(decimal);
+   }
+}
+
+
+Output:
+
+97
