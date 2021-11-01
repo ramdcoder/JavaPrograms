@@ -1,0 +1,70 @@
+[Java program to find transpose of a matrix](https://www.flowerbrackets.com/java-program-to-find-transpose-of-a-matrix/)
+
+Transpose means converting rows of matrix into columns and columns of matrix into row.
+
+For example:
+
+3x3 matrix
+-----------------
+a11    a12    a13
+a21    a22    a23
+a31    a32    a33
+
+transposed 3x3 matrix
+-----------------
+a11    a21    a31
+a12    a22    a32
+a13    a23    a33
+
+Let’s see java program to find transpose of a matrix.
+
+
+ 
+import java.util.Scanner;
+public class MatrixTransposeInJava
+{
+   public static void main(String[] args)
+   {
+      int[][] arrGiven = {{2,4,6},{8,1,3},{5,7,9}};	    
+      // another matrix to store transpose of matrix  
+      int[][] arrTranspose = new int[3][3];	    
+      // transpose matrix code  
+      for(int a = 0; a < 3; a++)
+      {    
+         for(int b = 0; b < 3; b++)
+         {    
+            arrTranspose[a][b] = arrGiven[b][a];  
+         } 
+      }	  
+      System.out.println("Before matrix transpose: ");  
+      for(int a = 0; a < 3; a++)
+      {    
+         for(int b = 0; b < 3; b++)
+         {    
+            System.out.print(arrGiven[a][b] + " ");    
+         } 
+         System.out.println();
+      }    
+      System.out.println("After matrix transpose: ");  
+      for(int a = 0; a < 3; a++)
+      {    
+         for(int b = 0; b < 3; b++)
+         {    
+            System.out.print(arrTranspose[a][b] + " ");    
+         } 
+         System.out.println();
+      }
+   }
+}
+
+
+Output:
+
+Before matrix transpose:
+2 4 6
+8 1 3
+5 7 9
+After matrix transpose:
+2 8 5
+4 1 7
+6 3 9
