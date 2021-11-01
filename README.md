@@ -44,3 +44,5 @@ Let's learn basic java programs.
 [Java convert hex to decimal](https://www.flowerbrackets.com/java-convert-hex-to-decimal/)
 
 [How to get last modified date of a file in java](https://www.flowerbrackets.com/how-to-get-file-last-modified-date-in-java/)
+
+[Java program to find if given year is leap year](https://www.flowerbrackets.com/java-program-to-find-if-given-year-is-leap-year/)
