@@ -52,3 +52,5 @@ Let's learn basic java programs.
 [Java program to find transpose of a matrix](https://www.flowerbrackets.com/java-program-to-find-transpose-of-a-matrix/)
 
 [Java convert octal to decimal](https://www.flowerbrackets.com/octal-to-decimal-java/)
+
+[Java program to check if a number is palindrome or not](https://www.flowerbrackets.com/java-program-check-if-number-is-palindrome-or-not/)
