@@ -1,0 +1,41 @@
+[Linear search in java](https://www.flowerbrackets.com/linear-search-java/)
+
+Linear search is very simple sequential search algorithm. It’s used to search key element in the given array. 
+Here search starts from leftmost element of an array and key element is compared with every element in an array.
+
+// linear search program in java
+public class LinearSearchExample
+{
+   // here function returns index of element x in arrLinear
+   static int searchNumber(int[] arrLinear, int key)
+   {
+      int num = arrLinear.length;
+      for(int a = 0; a < num; a++)
+      {
+         // here we are returning the index of the element if found
+         if(arrLinear[a] == key)
+            return a;
+      }
+      // here we are returning -1 if element is not found
+      return -1;
+   }
+   public static void main(String[] args)
+   {
+      int[] arrLinear = {15, 25, 35, 55, 75, 95};
+      int key = 55;
+      int output = searchNumber(arrLinear, key);
+      if(output == -1)
+      {
+         System.out.println("Sorry!!Element is not present");
+      }
+      else
+      {
+         System.out.println("Element is present at index " + output);
+      }
+   }
+}
+
+
+Output:
+
+Element is present at index 3
