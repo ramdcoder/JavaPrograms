@@ -1,0 +1,41 @@
+[Java program to check whether string is palindrome](https://www.flowerbrackets.com/java-program-check-whether-string-palindrome/)
+
+Java program to check whether string is palindrome
+
+Here equalsIgnoreCase() method is used which compares this string to another string, ignoring case considerations. Here’s the syntax for equalsIgnoreCase() method.
+
+public boolean equalsIgnoreCase(String anotherString)
+
+equalsIgnoreCase() method returns true if the argument is not null and it represents an equivalent String ignoring case; false otherwise.
+
+import java.util.*;
+public class PalindromeStringInJava
+{
+   public static void main(String[] args) 
+   { 
+      String strInput, strReverse = "";
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter the string : ");
+      strInput = sc.nextLine();
+      int num = strInput.length();
+      for(int a = num - 1; a >= 0; a--)
+      {
+          strReverse = strReverse + strInput.charAt(a);
+      }
+      if(strInput.equalsIgnoreCase(strReverse))
+      {
+         System.out.println("String is palindrome.");
+      }
+      else
+      {
+         System.out.println("String is not palindrome.");
+      }
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter the string : mom
+String is palindrome.
