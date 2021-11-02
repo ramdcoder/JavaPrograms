@@ -1,0 +1,24 @@
+[Java program to print alphabets](https://www.flowerbrackets.com/java-program-to-print-alphabets/)
+
+Java program to print alphabets
+
+Let’s learn program to print alphabets from a to z using while loop.
+
+public class PrintAlphabetUsingWhileLoop
+{
+   public static void main(String[] args)
+   {
+      System.out.println("Printing alphabets from a to z : ");
+      char alphabet = 'a';
+      while(alphabet <= 'z')
+      {
+         System.out.println(alphabet);
+         alphabet++;
+      }
+   }
+}
+
+
+Output:
+
+Printing alphabets from a to z : a b c d e f g h i j k l m n o p q r s t u v w x y z
