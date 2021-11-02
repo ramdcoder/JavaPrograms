@@ -1,0 +1,40 @@
+[Java program to check whether number is prime or not](https://www.flowerbrackets.com/java-program-to-check-whether-number-is-prime-or-not/)
+
+Java program to check whether number is prime or not
+
+Here’s the java code to check if number is prime or not using if else.
+
+public class PrimeNumberInJava
+{
+   public static void main(String[] args)
+   {
+      int a, b = 0, flag = 0;
+      int number = 66;
+      b = number / 2;
+      if(number == 0 || number == 1)
+      {
+         System.out.println(number + " is not prime number");
+      }
+      else
+      {
+         for(a = 2; a <= b; a++)
+         {
+            if(number % a == 0)
+            {
+               System.out.println(number + " is not prime number.");
+               flag = 1;
+               break;
+            }
+         }
+         if(flag == 0)
+         {
+            System.out.println(number + " is prime number.");
+         }
+      }
+   }
+}
+
+
+Output:
+
+66 is not prime number
