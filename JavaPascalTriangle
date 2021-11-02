@@ -1,0 +1,69 @@
+[Java program to display pascal triangle](https://www.flowerbrackets.com/java-program-to-display-pascal-triangle/)
+
+Java program to display pascal triangle
+
+Here’s the java program to display pascal triangle.
+
+import java.util.Scanner;
+public class PascalsTriangleJava 
+{
+   static int findFactorial(int number)
+   {
+      int factorial;
+      for(factorial = 1; number > 1; number--)
+      {
+         factorial *= number;
+      }
+      return factorial;
+   }
+   // here's the function to display pascal's triangle
+   static int printPascalTraingle(int num, int p) 
+   {
+      return findFactorial(num) / (findFactorial(num - p) * findFactorial(p));
+   }
+   public static void main(String[] args) 
+   {
+      int row, a, b;
+      System.out.println("Please enter number of rows: ");
+      Scanner sc = new Scanner(System.in);
+      row = sc.nextInt();
+      System.out.println("Here's is pascal's triangle: ");
+      for(a = 0; a < row; a++) 
+      {
+         for(b = 0; b < row - a; b++)
+         {
+            System.out.print(" ");
+         }
+         for(b = 0; b <= a; b++)
+         {
+            System.out.print(" " + printPascalTraingle(a, b));
+         }
+         System.out.println();
+      }
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter number of rows: 6
+Here’s is pascal’s triangle:
+1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1
+1 5 10 10 5 1
+
+Please enter number of rows: 9
+Here’s is pascal’s triangle:
+1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1
+1 5 10 10 5 1
+1 6 15 20 15 6 1
+1 7 21 35 35 21 7 1
+1 8 28 56 70 56 28 8 1
