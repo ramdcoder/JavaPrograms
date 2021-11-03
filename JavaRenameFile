@@ -1,0 +1,29 @@
+[How to rename file in java](https://www.flowerbrackets.com/how-to-rename-file-in-java/)
+
+How to rename file in java
+
+Here’s an example on how to rename file.
+
+import java.io.*;
+public class RenameFile
+{
+   public static void main(String[] args) throws IOException
+   {
+      File oldFile = new File("D:/Project/flower.java");
+      File renameFile = new File("D:/Project/flowerbrackets.java");
+      boolean rename = oldFile.renameTo(renameFile);
+      if(rename == true)
+      {
+         System.out.println("Rename successful");
+      }
+      else
+      {
+         System.out.println("Rename failed");
+      }
+   }
+}
+
+
+Output:
+
+Rename successful
