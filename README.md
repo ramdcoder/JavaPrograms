@@ -66,3 +66,5 @@ Let's learn basic java programs.
 [Java program to print multiplication table of any number](https://www.flowerbrackets.com/java-program-to-print-multiplication-table-of-any-number/)
 
 [Java program to delete vowels in a given string](https://www.flowerbrackets.com/java-program-to-delete-vowels-in-a-given-string/)
+
+[Random number generator in java](https://www.flowerbrackets.com/random-number-generator-java/)
