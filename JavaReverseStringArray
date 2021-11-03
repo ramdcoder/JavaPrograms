@@ -1,0 +1,38 @@
+[Java reverse string array](https://www.flowerbrackets.com/java-reverse-string-array/)
+
+Java reverse string array
+
+Here’s reverse string array program using for loop.
+
+import java.util.Arrays;
+public class ReverseStringArrayInJava
+{
+   public static void main(String[] args)
+   {
+      String[] strHierarchy = new String[]{"Junior Developer","Senior Developer","Team Lead","Project Manager","Senior Manager","CEO"};
+      System.out.println("Given string array: " + Arrays.toString(strHierarchy));
+      for(int a = 0; a < strHierarchy.length / 2; a++)
+      {
+         String strTemp = strHierarchy[a];
+         strHierarchy[a] = strHierarchy[strHierarchy.length - a - 1];
+         strHierarchy[strHierarchy.length - a - 1] = strTemp;
+      }
+      System.out.println("Reversed string array: ");
+      for(int a = 0; a < strHierarchy.length; a++)
+      {
+         System.out.println(strHierarchy[a]);
+      }
+   }
+}
+
+
+Output:
+
+Given string array: [Junior Developer, Senior Developer, Team Lead, Project Manager, Senior Manager, CEO]
+Reversed string array:
+CEO
+Senior Manager
+Project Manager
+Team Lead
+Senior Developer
+Junior Developer
