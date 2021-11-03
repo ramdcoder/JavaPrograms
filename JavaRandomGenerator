@@ -1,0 +1,23 @@
+[Random number generator in java](https://www.flowerbrackets.com/random-number-generator-java/)
+
+Random number generator in java
+
+Math.random() method in java
+
+random function in java returns pseudo random double greater than or equal to 0.0 and less than 1.0. Math.random() method uses Random class internally. Let’s see an example on Math.random() method in java.
+
+public class RandomMethodExample
+{
+   public static void main(String[] args)
+   {
+      // here we are generating random doubles 
+      System.out.println(Math.random()); 
+      System.out.println(Math.random());
+   }
+}
+
+
+Output:
+
+0.31834412935584566
+0.40181643543705636
