@@ -1,0 +1,59 @@
+[Java program to delete vowels in a given string](https://www.flowerbrackets.com/java-program-to-delete-vowels-in-a-given-string/)
+
+Java program to delete vowels in a given string
+
+Here’s program to remove vowels from string java.
+
+
+ 
+import java.util.*;
+public class RemoveVowelsInString
+{
+   public static void main(String[] args)
+   {
+      String str = "Deekshit Prasad";
+      System.out.println("Given string: " + str);
+      str = str.replaceAll("[AaEeIiOoUu]", "");
+      System.out.println("After deleting vowels in given a string: " + str);
+   }
+}
+
+
+Output:
+
+Given string: Deekshit Prasad
+After deleting vowels in a given string: Dksht Prsd
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Similarly we can also execute above program to remove vowels from string java using a method.
+
+import java.util.Scanner;
+public class RemoveVowelsUsingMethod
+{
+   static String removeVowel(String strVowel)
+   {
+      Character[] chVowels = {'a', 'e', 'i', 'o', 'u','A','E','I','O','U'};
+      List<Character> li = Arrays.asList(chVowels);
+      StringBuffer sb = new StringBuffer(strVowel);
+      for(int a = 0; a < sb.length(); a++)
+      {
+         if(li.contains(sb.charAt(a)))
+         {
+            sb.replace(a, a + 1, "");
+            a--;
+         }
+      }
+      return sb.toString();
+   }
+   public static void main(String[] args)
+   {
+      String strInput = "Flower Brackets";
+      System.out.println(removeVowel(strInput));
+   }
+}
+
+
+Output:
+
+Flwr Brckts
