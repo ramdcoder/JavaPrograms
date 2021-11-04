@@ -74,3 +74,5 @@ Let's learn basic java programs.
 [Java reverse string array](https://www.flowerbrackets.com/java-reverse-string-array/)
 
 [Java program to find simple interest](https://www.flowerbrackets.com/java-program-to-find-simple-interest/)
+
+[How to sort a string array in java](https://www.flowerbrackets.com/how-to-sort-a-string-array-in-java/)
