@@ -1,0 +1,35 @@
+[How to sort a string array in java](https://www.flowerbrackets.com/how-to-sort-a-string-array-in-java/)
+
+How to sort a string array in java
+
+Basically String class do not have method to sort string array. So to sort string array we need to match each element of an array to the remaining elements.
+
+ In the below example let’s learn how to sort string array without using sort method.
+
+import java.util.Arrays;
+public class SortStringArray
+{
+   public static void main(String[] args)
+   {
+      String[] strPlaces = {"Great Barrier Reef", "Paris", "BoraBora", "Florence","Tokyo", "Cusco"};
+      int size = strPlaces.length;
+      for(int a = 0; a < size - 1; a++)
+      {
+         for(int b = a + 1; b < strPlaces.length; b++)
+         {
+            if(strPlaces[a].compareTo(strPlaces[b]) > 0)
+            {
+               String temp = strPlaces[a];
+               strPlaces[a] = strPlaces[b];
+               strPlaces[b] = temp;
+            }
+         }
+      }
+      System.out.println(Arrays.toString(strPlaces));
+   }
+}
+
+
+Output:
+
+[BoraBora, Cusco, Florence, Great Barrier Reef, Paris, Tokyo]
