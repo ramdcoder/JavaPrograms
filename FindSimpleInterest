@@ -1,0 +1,43 @@
+[Java program to find simple interest](https://www.flowerbrackets.com/java-program-to-find-simple-interest/)
+
+Java program to find simple interest
+
+It is calculated by using formula,
+
+Simple Interest = (P x R x T) / 100
+
+P – is principal amount.
+
+R – is rate per annum.
+
+T – is time in years.
+
+Let’s see java program to calculate simple interest or write a program to calculate simple interest in java.
+
+import java.util.Scanner;
+public class SimpleInterestJavaProgram
+{
+   public static void main(String[] args)
+   {
+      float principal, rate, time;
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Enter principal amount : ");
+      principal = sc.nextFloat();
+      System.out.print("Please enter rate annually : ");
+      rate = sc.nextFloat();
+      System.out.print("Please enter time(in years) : ");
+      time = sc.nextFloat();
+      float simpleInterest;
+      simpleInterest = (principal * time * rate) / 100;
+      System.out.println("The Simple Interest is : " + simpleInterest);
+      sc.close();
+   }
+}
+
+
+Output:
+
+Enter principal amount : 10000
+Please enter rate annually : 7
+Please enter time (in years) : 3
+The simple interest is : 2100.0
