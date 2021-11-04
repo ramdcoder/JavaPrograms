@@ -1,0 +1,12 @@
+[Java remove character from string](https://www.flowerbrackets.com/java-remove-character-from-string/)
+
+Java remove character from string
+
+In java, String class do not have remove() method. Meanwhile String class have replace() method with overloaded variations like this as shown below.
+
+replace(char oldChar, char newChar)
+replace(CharSequence target, CharSequence replacement)
+replaceFirst(String regex, String replacement)
+replaceAll(String regex, String replacement)
+
+For more refer this resource - https://www.flowerbrackets.com/java-remove-character-from-string/
