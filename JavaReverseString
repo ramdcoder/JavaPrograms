@@ -1,0 +1,69 @@
+[Reverse a string in java](https://www.flowerbrackets.com/reverse-string-in-java/)
+
+Reverse a string in java
+
+Let’s learn following ways or different methods to reverse a string. As we know that String is immutable. String class do not have reverse() method.
+While StringBuffer class has reverse() method.
+
+First let’s learn to reverse a string using ByteArray.
+
+// java program to reverse a string
+class ReverseStringByteArray
+{
+   public static void main(String[] args)
+   {
+      String input = "HelloWorld";
+      // getBytes() method to convert string into bytes[].
+      byte[] strByteArray = input.getBytes();
+      byte[] output = new byte[strByteArray.length];
+      // store output in reverse order
+      for(int a = 0; a < strByteArray.length; a++)
+         output[a] = strByteArray[strByteArray.length - a - 1];
+      System.out.println(new String(output));
+   }
+}
+
+
+Output:
+
+dlroWolleH
+
+reverse string using reverse() method of StringBuilder class
+
+// stringbuilder reverse
+class ReverseUsingReverseMethod
+{
+   public static void main(String[] args)
+   {
+      String str = "Hello world Java";
+      StringBuilder sb = new StringBuilder();
+      // append string to StringBuilder
+      sb.append(str);
+      sb = sb.reverse();
+      // printing reversed String
+      System.out.println(sb);
+   }
+}
+
+
+Output:
+
+avaJ dlrow olleH
+
+reverse string using character array
+
+class ReverseUsingCharacterArray
+{
+   public static void main(String[] args)
+   {
+      String str = "HelloWorldJava";
+      char[] ch = str.toCharArray();
+      for(int a = ch.length - 1; a >= 0; a--)
+         System.out.print(ch[a]);
+   }
+}
+
+
+Output:
+
+avaJdlroWolleH
