@@ -80,3 +80,5 @@ Let's learn basic java programs.
 [Java remove character from string](https://www.flowerbrackets.com/java-remove-character-from-string/)
 
 [Reverse a string in java](https://www.flowerbrackets.com/reverse-string-in-java/)
+
+[Java program to swap two numbers](https://www.flowerbrackets.com/java-program-to-swap-two-numbers/)
