@@ -84,3 +84,5 @@ Let's learn basic java programs.
 [Java program to swap two numbers](https://www.flowerbrackets.com/java-program-to-swap-two-numbers/)
 
 [Fibonacci series in java](https://www.flowerbrackets.com/fibonacci-series-in-java/)
+
+[Symmetric matrix program in java](https://www.flowerbrackets.com/symmetric-matrix-program-in-java/)
