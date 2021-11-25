@@ -1,0 +1,28 @@
+Fibonacci series in java
+
+[Fibonacci series in java](https://www.flowerbrackets.com/fibonacci-series-in-java/)
+
+A fibonacci series is a sequence where next number is sum of previous two numbers. fibonacci sequence java: 0, 1, 1, 2, 3, 5, 8, 13, 21 . . . . .
+
+Let’s see program for fibonacci series in java.
+
+public class FibonacciSeriesForLoop
+{
+   public static void main(String[] args)
+   {
+      int f = 10, num1 = 0, num2 = 1;
+      System.out.print("First " + f + " fibonacci sequence: ");
+      for(int a = 1; a <= f; ++a)
+      {
+         System.out.print(num1 + " + ");
+         int total = num1 + num2;
+         num1 = num2;
+         num2 = total;
+      }
+   }
+}
+
+
+Output:
+
+First 10 fibonacci sequence: 0 + 1 + 1 + 2 + 3 + 5 + 8 + 13 + 21 + 34 +
