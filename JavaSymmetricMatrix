@@ -1,0 +1,69 @@
+Symmetric matrix program in java
+
+[Symmetric matrix program in java](https://www.flowerbrackets.com/symmetric-matrix-program-in-java/)
+
+How to tell if a matrix is symmetric?
+
+For a matrix to be symmetric, first it should be a square matrix and second every element at “i”th row and “j”th column should be equal to element at “j”th row and “i”th column.
+
+That is A[i][j] == A[j][i]. Here’s symmetric matrix program.
+
+import java.util.Scanner;
+public class SymmetricMatrixDemo
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter number of rows - ");
+      int row = sc.nextInt();
+      System.out.println("Please enter number of columns - ");
+      int col = sc.nextInt();
+      int symMatrix[][] = new int[row][col];
+      System.out.println("Please enter the elements - ");
+      for(int x = 0; x < row; x++)
+      {
+         for(int y = 0; y < col; y++)
+         {
+            symMatrix[x][y] = sc.nextInt();
+         }
+      }
+      System.out.println("Now printing the input matrix - ");
+      for(int x = 0; x < row; x++)
+      {
+         for(int y = 0; y < col; y++)
+         {
+            System.out.print(symMatrix[x][y] + "\t");
+         }
+         System.out.println();
+      }
+      // check if a matrix is symmetric
+      if(row != col)
+      {
+         System.out.println("It's not a square matrix!!");
+      }
+      else
+      {
+         boolean symmetricMatrix = true;
+         for(int x = 0; x < row; x++)
+         {
+            for(int y = 0; y < col; y++)
+            {
+               if(symMatrix[x][y] != symMatrix[y][x])
+               {
+                  symmetricMatrix = false;
+                  break;
+               }
+            }
+         }
+         if(symmetricMatrix)
+         {
+            System.out.println("It's a symmetric matrix!!");
+         }
+         else
+         {
+            System.out.println("It's not a symmetric matrix!!");
+         }
+      }
+      sc.close();
+   }
+}
