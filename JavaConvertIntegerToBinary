@@ -1,0 +1,39 @@
+Java program to convert integer value into binary
+
+[Java program to convert integer value into binary](https://www.flowerbrackets.com/java-program-to-convert-integer-value-into-binary/)
+
+To convert an integer to binary java first user enters an integer number as input using nextInt() method of Scanner class.
+
+This number is stored in integer variable “num”. Then in while loop we check variable “num” is greater than 0.
+
+If variable “num” is greater than zero then inside while loop using modulus and division operator given input is converted into binary. Here’s how to convert integer to 
+binary in java.
+
+import java.util.*;
+import java.util.Scanner;
+public class IntegerToBinary
+{
+   public static void main(String[] args)
+   {
+      int num;
+      String str = "";
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter the a number : ");
+      num = sc.nextInt();
+      // convert int to binary java
+      while(num > 0)
+      {
+         int y = num % 2;
+         str = y + str;
+         num = num / 2;
+      }
+      System.out.println("The binary conversion is : " + str);
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter the a number : 12
+The binary conversion is : 1100
