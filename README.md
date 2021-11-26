@@ -88,3 +88,5 @@ Let's learn basic java programs.
 [Symmetric matrix program in java](https://www.flowerbrackets.com/symmetric-matrix-program-in-java/)
 
 [Convert string to date in java](https://www.flowerbrackets.com/java-convert-string-to-date/)
+
+[Java program to convert integer value into binary](https://www.flowerbrackets.com/java-program-to-convert-integer-value-into-binary/)
