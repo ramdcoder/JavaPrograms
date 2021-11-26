@@ -1,0 +1,25 @@
+Convert string to date in java
+
+[Convert string to date in java](https://www.flowerbrackets.com/java-convert-string-to-date/)
+
+Java string to date conversion is one of the common java interview question. In this post let us learn how to convert string to date java.
+
+Now let’s see an example on string to date java.
+
+import java.util.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+public class ConvertStringToDate
+{
+   public static void main(String[] args) throws Exception
+   {
+      String strDate = "09/03/1996";
+      Date dt = new SimpleDateFormat("dd/MM/yyyy").parse(strDate);
+      System.out.println(strDate + " - " + dt);
+   }
+}
+
+
+Output:
+
+09/03/1996 – Sat Mar 09 00:00:00 IST 1996
