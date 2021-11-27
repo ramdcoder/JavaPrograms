@@ -1,0 +1,44 @@
+Java program to swap two numbers using function
+
+[Java program to swap two numbers using function](https://www.flowerbrackets.com/java-program-to-swap-two-numbers-using-function/)
+
+Here’s the java program to swap two numbers using function.
+
+import java.util.Scanner;
+public class SwapTwoNumberDemo 
+{
+   int numOne, numTwo;
+   public void swapNum(SwapTwoNumberDemo stn)
+   {
+      int temp;
+      temp = stn.numOne;
+      stn.numOne = stn.numTwo;
+      stn.numTwo = temp;
+   }
+   public static void main(String[] args) 
+   {
+      SwapTwoNumberDemo obj = new SwapTwoNumberDemo();
+      try
+      {
+         Scanner sc = new Scanner(System.in);             
+         System.out.println("First number : ");
+         obj.numOne = sc.nextInt();
+         System.out.println("Second number : ");
+         obj.numTwo = sc.nextInt();
+         obj.swapNum(obj);
+         System.out.println("After swapping - numOne : " + obj.numOne + ", numTwo : " + obj.numTwo);
+         sc.close();
+      }
+      catch(Exception ex)
+      {
+         System.out.println("Exception: " + ex.toString());
+      }
+   }
+}
+
+
+Output:
+
+First number : 50
+Second number : 100
+After swapping – numOne : 100, numTwo : 50
