@@ -1,0 +1,34 @@
+Calculate area of rectangle using default constructor in java
+
+[Calculate area of rectangle using default constructor in java](https://www.flowerbrackets.com/area-of-rectangle-using-default-constructor-in-java/)
+
+Now let’s see calculate area of rectangle using default constructor in java.
+
+import java.util.*;
+class RectangleShape 
+{
+   int area, length, breadth; 
+   RectangleShape() 
+   { 
+      length = 50; 
+      breadth = 20; 
+   } 
+   void getArea() 
+   { 
+      area = length * breadth; 
+      System.out.println("Area of Rectangle : " + area); 
+   }  
+}
+public class RectangleAreaConstructor
+{
+   public static void main(String[] args) 
+   {
+      RectangleShape rs = new RectangleShape(); 
+      rs.getArea();
+   }
+}
+
+
+Output:
+
+Area of Rectangle : 1000
