@@ -90,3 +90,5 @@ Let's learn basic java programs.
 [Convert string to date in java](https://www.flowerbrackets.com/java-convert-string-to-date/)
 
 [Java program to convert integer value into binary](https://www.flowerbrackets.com/java-program-to-convert-integer-value-into-binary/)
+
+[Matrix multiplication in java using function](https://www.flowerbrackets.com/matrix-multiplication-in-java-using-function/)
