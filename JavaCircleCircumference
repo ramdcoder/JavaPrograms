@@ -1,0 +1,36 @@
+Java program to find circumference of a circle
+
+[Java program to find circumference of a circle](https://www.flowerbrackets.com/java-program-to-find-circumference-of-a-circle/)
+
+To calculate circumference of circle in java, first we have to get radius of circle from user using nextInt() method of Scanner class.
+
+This user entered number is stored in integer variable “radius”. Then find circumference of a circle using below formula. To find circumference of a circle formula is,
+
+circumference = 2πr
+
+Circumference of circle is twice the product of radius and value of PI. This product is stored in double variable “circumference”.
+
+Lastly circumference is printed on console. Here’s the java program to calculate circumference of circle.
+
+import java.util.Scanner;
+public class CircumferenceOfCircleJava
+{
+   public static void main(String[] args) 
+   {
+      int radius;
+      double circumference;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter the radius : ");
+      radius = sc.nextInt();
+      // double radius
+      circumference = Math.PI * 2 * radius;
+      System.out.println("Circumference of circle : " + circumference);
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter the radius : 10
+Circumference of circle : 62.83185307179586
