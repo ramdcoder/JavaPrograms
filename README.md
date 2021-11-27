@@ -92,3 +92,5 @@ Let's learn basic java programs.
 [Java program to convert integer value into binary](https://www.flowerbrackets.com/java-program-to-convert-integer-value-into-binary/)
 
 [Matrix multiplication in java using function](https://www.flowerbrackets.com/matrix-multiplication-in-java-using-function/)
+
+[Java program to swap two numbers using function](https://www.flowerbrackets.com/java-program-to-swap-two-numbers-using-function/)
