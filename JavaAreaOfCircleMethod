@@ -1,0 +1,32 @@
+Java program to calculate area of circle using method
+
+[Java program to calculate area of circle using method](https://www.flowerbrackets.com/java-program-calculate-area-of-circle-using-method/)
+
+To find area of a circle using method in java, first we have to write calculateArea() method which accepts radius as parameter to calculate area of circle in java.
+
+Then in the next step, in main() method we have to call calculateArea() method. Here’s the java program to calculate area of circle using method.
+
+import java.util.Scanner;
+public class AreaOfCircleMethod 
+{
+   public static void main(String[] args) 
+   {
+      Scanner sc = new Scanner(System.in);  
+      System.out.println("Please enter radius : ");
+      double radius = sc.nextDouble();
+      // area of circle in java
+      double area = calculateArea(radius);  
+      System.out.println("Area of circle : " + area);
+      sc.close();
+   }
+   static double calculateArea(double r)
+   {
+      return (22 * r * r) / 7;
+   }
+}
+
+
+Output:
+
+Please enter radius : 5
+Area of circle : 78.57142857142857
