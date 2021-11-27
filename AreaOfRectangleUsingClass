@@ -1,0 +1,43 @@
+Calculate area of rectangle using class in java
+
+[Calculate area of rectangle using class in java](https://www.flowerbrackets.com/calculate-area-of-rectangle-using-class-in-java/)
+
+Let’s see java program to find area of rectangle using class and object class and object. In the below java program,
+
+first create class “RectangleShape”. This class has two integer variables length, breadth.
+to set values for variables length and breadth setValue() method is created.
+In findArea() method we are calculating area of rectangle and in turn returning area.
+In the main() method create object of class RectangleShape.
+assign values for length and breadth. Finally calculate area by calling findArea() method.
+
+Here’s java program to find area of rectangle using class and object.
+
+import java.io.*;
+class RectangleShape 
+{
+   int length, breadth; 
+   void setValue(int l, int b) 
+   { 
+       length = l; 
+       breadth = b; 
+   }
+   // get area of rectangle
+   int findArea() 
+   { 
+       return (length * breadth); 
+   }
+}
+public class RectangleAreaDemo
+{
+   public static void main(String[] args)
+   {
+      RectangleJava obj = new RectangleJava(); 
+      obj.setValue(10, 5); 
+      System.out.println("Area of rectangle: " + obj.findArea());
+   }
+}
+
+
+Output:
+
+Area of rectangle: 50
