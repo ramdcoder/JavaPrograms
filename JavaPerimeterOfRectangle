@@ -1,0 +1,43 @@
+Java program to find perimeter of a rectangle
+
+[Java program to find perimeter of a rectangle](https://www.flowerbrackets.com/java-program-to-find-perimeter-of-rectangle/)
+
+In program to find perimeter of a rectangle first user enters length and width of a rectangle using nextFloat() method of Scanner class.
+
+This user input is stored in variables length and width of datatype float. Then using below formula find perimeter of rectangle.
+
+perimeter = 2 * (length + width). Lastly print the perimeter value. For example
+
+Input:
+
+Length = 10
+
+Width = 5
+
+Perimeter = 2 * (10 + 5) = 30
+
+Here’s the java program.
+
+import java.util.Scanner;
+public class PerimeterOfRectangleDemo
+{    
+   public static void main(String []args)
+   {
+      float length, width, perimeter;
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter length of rectangle: ");
+      length = sc.nextFloat();
+      System.out.print("Please enter width of rectangle: ");
+      width  = sc.nextFloat();
+      perimeter = 2 * (length + width);
+      System.out.println("Perimeter of rectangle: " + perimeter);
+      sc.close();
+   }          
+}
+
+
+Output:
+
+Please enter length of rectangle: 4
+Please enter width of rectangle: 5
+Perimeter of rectangle: 18.0
