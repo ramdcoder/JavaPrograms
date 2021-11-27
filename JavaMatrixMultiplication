@@ -1,0 +1,52 @@
+Matrix multiplication in java using function
+
+[Matrix multiplication in java using function](https://www.flowerbrackets.com/matrix-multiplication-in-java-using-function/)
+
+To multiply two matrix, number of columns of first matrix should be equal to number of rows of second matrix. Here’s the matrix multiplication in java using function.
+
+public class MatrixMultiplicationUsingFunction 
+{
+   public static int[][] multiplyMatrix(int[][] matrix1, int[][] matrix2, int row, int column, int col)
+   {
+      int[][] multiply = new int[row][col];
+      for(int a = 0; a < row; a++) 
+      {
+         for(int b = 0; b < col; b++) 
+         {
+            for(int k = 0; k < column; k++) 
+            {
+               multiply[a][b] += matrix1[a][k] * matrix2[k][b];
+            }
+         }
+      }
+      return multiply;
+   }
+   public static void printMatrix(int[][] multiply) 
+   {
+      System.out.println("Multiplication of two matrices: ");
+      for(int[] row : multiply) 
+      {
+         for(int column : row) 
+         {
+            System.out.print(column + "    ");
+         }
+         System.out.println();
+      }
+   }
+   public static void main(String[] args) 
+   {
+      int row = 2, col = 3;
+      int column = 2;
+      int[][] matrixOne = {{1, 2, 3}, {4, 5, 6}};
+      int[][] matrixTwo = {{7, 8}, {9, 1}, {2, 3}};
+      int[][] product = multiplyMatrix(matrixOne, matrixTwo, row, col, column);
+      printMatrix(product);
+   }
+}
+
+
+Output:
+
+Multiplication of two matrices:
+31 19
+85 55
