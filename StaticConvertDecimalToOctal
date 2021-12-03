@@ -1,0 +1,33 @@
+Static method – java convert decimal to octal
+
+[Static method – java convert decimal to octal](https://www.flowerbrackets.com/static-method-java-program-to-convert-decimal-to-octal/)
+
+import java.util.Scanner;
+public class DecimalToOctal
+{
+   static int a = 1;
+   public static void main(String[] args)
+   {
+      int decimal;
+      Scanner sc = new Scanner(System.in);   
+      System.out.println("Please enter a decimal number : ");
+      decimal = sc.nextInt();
+      System.out.println("The octal number is : ");
+      int[] oct = convertToOctal(decimal); 
+      for(int x = a - 1; x > 0; x--)
+      {
+         System.out.print(oct[x]);
+      }
+      sc.close();
+   }
+   static int[] convertToOctal(int oct) 
+   {
+      int y[] = new int[50];
+      while(oct != 0)
+      {
+         y[a++] = oct % 8;
+         oct = oct / 8;
+      }
+      return y;
+   }
+}
