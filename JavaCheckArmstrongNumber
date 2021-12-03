@@ -1,0 +1,29 @@
+Java program to check armstrong number
+
+[Java program to check armstrong number](https://www.flowerbrackets.com/java-program-to-check-armstrong-number/)
+
+Let’s check whether a given number is an armstrong number.
+
+import java.util.*;
+public class ArmstrongNumberInJava
+{
+   public static void main(String[] args)
+   {
+      int num = 371, a, remainder, output = 0;
+      a = num;
+      while(a != 0)
+      {
+         remainder = a % 10;
+         output += Math.pow(remainder, 3);
+         a /= 10;
+      }
+      if(output == num)
+      {
+         System.out.println(num + " is an armstrong number.");
+      }
+      else
+      {
+         System.out.println(num + " is not an armstrong number.");
+      }
+   }
+}
