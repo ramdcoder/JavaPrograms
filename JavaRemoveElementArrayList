@@ -1,0 +1,56 @@
+How to remove element from arraylist in java
+
+[How to remove element from arraylist in java](https://www.flowerbrackets.com/how-to-remove-element-from-arraylist-in-java/)
+
+Let’s see java program on ArrayList remove(int index) method example.
+
+import java.util.ArrayList;
+import java.util.List;
+public class ArrayListRemoveIndex
+{
+   public static void main(String[] args)
+   {
+      List<Integer> al = new ArrayList<>();
+      al.add(56);
+      al.add(28);
+      al.add(39);
+      al.add(59);
+      al.add(82);
+      System.out.println("Before using ArrayList.remove(int index) method: " + al);
+      // removes element 28
+      al.remove(1);
+      // element 39 is now moved one position back
+      // So element 39 is removed
+      al.remove(1);
+      System.out.println("After using ArrayList.remove(int index) method: " + al);
+   }
+}
+
+Here we will learn how to remove an element from arraylist using Iterator’s remove() method.
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+public class IteratorRemoveDemo
+{
+   public static void main(String[] args)
+   {
+      List<Integer> al = new ArrayList<>();
+      al.add(56);
+      al.add(28);
+      al.add(39);
+      al.add(59);
+      al.add(82);
+      System.out.println("Before removing element using Iterator remove() method: " + al);
+      Iterator<Integer> iterate = al.iterator();
+      while(iterate.hasNext())
+      {
+         int r = (Integer)iterate.next();
+         if(r > 50)
+         {
+            iterate.remove();
+         }
+      }
+      System.out.println("After removing element using Iterator remove() method: " + al);
+   }
+}
