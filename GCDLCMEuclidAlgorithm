@@ -1,0 +1,50 @@
+Java program find GCD and LCM of two numbers using euclid’s algorithm
+
+[Java program find GCD and LCM of two numbers using euclid’s algorithm](https://www.flowerbrackets.com/java-program-find-gcd-lcm-two-numbers-euclids-algorithm/)
+
+Now let’s see java program to find gcd and lcm using euclid’s algorithm.
+
+import java.util.Scanner;
+public class GCDLCMEuclid 
+{
+   // gcd java
+   void findGCD(long num1, long num2)
+   {
+      while(num2 > 0)
+      {
+         long temp = num2;
+         num2 = num1 % num2;
+         num1 = temp;
+      }
+      System.out.println("GCD is : " + num1);
+   }
+   // lcm java
+   void findLCM(long num1, long num2)
+   {
+      long a = num1;
+      long b = num2;
+      while(num2 > 0)
+      {
+         long temp = num2;
+         num2 = num1 % num2;
+         num1 = temp;
+      }
+      long gcd = num1;
+      long lcm = (a * (b / gcd));
+      System.out.println("LCM is : " + lcm);
+   }
+   public static void main(String[] args)
+   {
+      GCDLCMEuclid obj = new GCDLCMEuclid();
+      System.out.println("Please enter any two numbers to find GCD : ");
+      Scanner sc = new Scanner(System.in);
+      long a = sc.nextLong();
+      long b = sc.nextLong();
+      obj.findGCD(a, b);
+      System.out.println("Please enter any two numbers to find LCM : ");
+      long c = sc.nextLong();
+      long d = sc.nextLong();
+      obj.findLCM(c, d);
+      sc.close();
+   }
+}
