@@ -1,0 +1,35 @@
+Recursion – java program to convert decimal to octal
+
+[Recursion – java program to convert decimal to octal](https://www.flowerbrackets.com/recursion-java-program-to-convert-decimal-to-octal/)
+
+import java.util.Scanner;
+public class DecimalToOctalExample
+{
+   static int octal[] = new int[50], x = 1;
+   // decimal to octal java
+   int[] convertToOctal(int oct)
+   {
+      if(oct != 0)
+      {
+         octal[x++] = oct % 8;
+         oct = oct / 8;
+         convertToOctal(oct);
+      }
+      return octal;
+   }
+   public static void main(String[] args)
+   {
+      DecimalToOctalExample dto = new DecimalToOctalExample();
+      int decimal;
+      Scanner sc = new Scanner(System.in); 
+      System.out.println("Please enter a decimal number: ");
+      decimal = sc.nextInt();
+      System.out.println("The octal number is : ");
+      int[] oct = dto.convertToOctal(decimal);
+      for(int a = x - 1; a > 0; a--)
+      {
+         System.out.print(oct[a]);
+      }
+      sc.close();
+   }
+}
