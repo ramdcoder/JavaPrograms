@@ -1,0 +1,25 @@
+Java Bitwise AND to check a given number is odd or even
+
+[Java Bitwise AND to check a given number is odd or even](https://www.flowerbrackets.com/java-bitwise-and-to-check-given-number-odd-or-even/)
+
+Here’s java program to check whether the given number is even or odd using (&) operator.
+
+import java.util.Scanner;
+public class EvenOddBitwise
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter a number: ");
+      int number = sc.nextInt();
+      if((number & 1) == 0)
+      {
+         System.out.println(number + " is an even number.");
+      }
+      else
+      {
+         System.out.println(number + " is an odd number.");
+      }
+      sc.close();
+   }
+}
