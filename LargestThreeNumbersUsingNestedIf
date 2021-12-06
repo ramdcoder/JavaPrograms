@@ -1,0 +1,35 @@
+Java program to find the largest in three numbers using nested if
+
+[Java program to find the largest in three numbers using nested if](https://www.flowerbrackets.com/java-program-largest-three-numbers-nested-if/)
+
+ Here’s the java program to find the largest of three numbers using nested if.
+
+public class LargestNestedIfDemo 
+{
+   public static void main(String[] args) 
+   {
+      int num1 = 36, num2 = 35, num3 = 56;
+      if(num1 >= num2) 
+      {
+         if(num1 >= num3)
+         {
+            System.out.println(num1 + " is largest number.");
+         }
+         else
+         {
+            System.out.println(num3 + " is largest number.");
+         }
+      } 
+      else 
+      {
+         if(num2 >= num3)
+         {
+            System.out.println(num2 + " is largest number.");
+         }
+         else
+         {
+            System.out.println(num3 + " is largest number.");
+         }
+      }
+   }
+}
