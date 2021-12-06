@@ -1,0 +1,24 @@
+Java program to find largest in three numbers using ternary operator
+
+[Java program to find largest in three numbers using ternary operator](https://www.flowerbrackets.com/java-program-find-largest-in-three-numbers-using-ternary-operator/)
+
+Now let’s see program to find largest of three numbers using ternary operator.
+
+import java.util.Scanner;
+public class LargestInThree 
+{
+   public static void main(String[] args) 
+   {
+      int number1, number2, number3, largest;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter first number: ");
+      number1 = sc.nextInt();
+      System.out.println("Please enter second number: ");
+      number2 = sc.nextInt();
+      System.out.println("Please enter third number: ");
+      number3 = sc.nextInt();
+      largest = number3 > (number1 > number2 ? number1 : number2) ? number3 : ((number1 > number2) ? number1 : number2);
+      System.out.println("Largest in three numbers using ternary operator: " + largest);
+      sc.close();
+   }
+}
