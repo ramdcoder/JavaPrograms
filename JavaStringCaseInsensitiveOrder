@@ -1,0 +1,25 @@
+Sort string array in case insensitive order and case sensitive order java
+
+[Sort string array in case insensitive order and case sensitive order java](https://www.flowerbrackets.com/sort-string-array-case-sensitive-order-and-case-insensitive-order-java/)
+
+Here’s the program on sort string array in case insensitive order and case sensitive order.
+
+import java.util.Arrays;
+public class SortStringArrayDemo
+{
+   public static void main(String[] args) 
+   {
+      String[] fruits = new String[5];
+      fruits[0] = "Mango";
+      fruits[1] = "cherries";
+      fruits[2] = "Apple";
+      fruits[3] = "lychee ";
+      fruits[4] = "Elderberry";
+      Arrays.sort(fruits);
+      System.out.println("CASE SENSITIVE ORDER : ");
+      System.out.println(Arrays.toString(fruits));
+      Arrays.sort(fruits, String.CASE_INSENSITIVE_ORDER);
+      System.out.println("CASE INSENSITIVE ORDER : ");
+      System.out.println(Arrays.toString(fruits));
+   }
+}
