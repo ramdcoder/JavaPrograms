@@ -1,0 +1,40 @@
+Java program to check if it is a sparse matrix
+
+[Java program to check if it is a sparse matrix](https://www.flowerbrackets.com/java-program-check-sparse-matrix/)
+
+Now let’s see java program to determine whether a given matrix is a sparse matrix.
+
+import java.util;
+public class SparseMatrix
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter dimensions of sparse matrix: ");
+      int x = sc.nextInt();
+      int y = sc.nextInt();
+      int[][] arrNumber = new int[x][y];
+      int zeros = 0;
+      System.out.println("Please enter elements of sparse matrix: ");
+      for(int a = 0; a < x; a++)
+      {
+         for(int b = 0; b < y; b++)
+         {
+            arrNumber[a][b] = sc.nextInt();
+            if(arrNumber[a][b] == 0)
+            {
+               zeros++;
+            }
+         }
+      }	 
+      if(zeros > (x * y) / 2)
+      {
+         System.out.println("Given matrix is sparse matrix.");
+      }
+      else
+      {
+         System.out.println("Given matrix is not a sparse matrix.");
+      }	 
+      sc.close();
+   }
+}
