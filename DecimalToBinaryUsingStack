@@ -1,0 +1,47 @@
+Java program to convert decimal to binary using toBinaryString and stack
+
+[Java program to convert decimal to binary using toBinaryString and stack](https://www.flowerbrackets.com/java-decimal-to-binary-using-tobinarystring-and-stack/)
+
+Convert decimal to binary using toBinaryString() method
+
+public class DecimalToBinary
+{
+   public static void main(String[] args)
+   {
+      System.out.println("decimal to binary using toBinaryString() 104: ");
+      // to binary string java
+      System.out.println(Integer.toBinaryString(104));
+      System.out.println("\ndecimal to binary using toBinaryString() 554: ");
+      // tobinarystring
+      System.out.println(Integer.toBinaryString(554));
+      System.out.println("\ndecimal to binary using toBinaryString() 644: ");
+      System.out.println(Integer.toBinaryString(644));
+   }
+}
+
+Similarly here’s the java program to convert decimal to binary using stack.
+
+import java.util.*;
+public class DecimalBinaryExample
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);                
+      Stack<Integer> numStack = new Stack<Integer>();     
+      System.out.println("Please enter a decimal number : ");
+      int number = sc.nextInt();
+      while(number != 0)
+      {
+         int a = number % 2;
+         numStack.push(a);
+         number /= 2;
+      }
+      System.out.println("Binary number : ");
+      while(!(numStack.isEmpty()))
+      {
+         System.out.print(numStack.pop());
+      }
+      System.out.println();
+      sc.close();
+   }
+}
