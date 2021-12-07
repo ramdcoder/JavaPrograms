@@ -1,0 +1,19 @@
+Area of equilateral triangle in java
+
+[Area of equilateral triangle in java](https://www.flowerbrackets.com/area-of-equilateral-triangle-in-java/)
+
+Here’s the program to find area of an equilateral triangle in java.
+
+import java.util.Scanner;
+public class AreaOfEquilateralTriangle
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter the side of equilateral triangle: ");
+      double side = sc.nextDouble();
+      double area = (Math.sqrt(3)/4) * (side * side);
+      System.out.println("Area of equilateral triangle is: " + area);
+      sc.close();
+   }
+}
