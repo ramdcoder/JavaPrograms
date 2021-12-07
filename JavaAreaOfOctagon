@@ -1,0 +1,19 @@
+Area of octagon in java
+
+[Area of octagon in java](https://www.flowerbrackets.com/area-of-octagon-in-java/)
+
+Now let’s see java program.
+
+import java.util.Scanner;
+public class AreaOfOctagon
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter length of side of octagon: ");
+      int side = sc.nextInt();
+      float area = (float) (2 * (1 + Math.sqrt(2)) * side * side);
+      System.out.println("Area of octagon is: " + area);
+      sc.close();
+   }
+}
