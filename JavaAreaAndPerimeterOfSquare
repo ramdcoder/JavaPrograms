@@ -1,0 +1,37 @@
+Java program to find area and perimeter of square
+
+[Java program to find area and perimeter of square](https://www.flowerbrackets.com/java-program-to-find-perimeter-of-square/)
+
+Let’s see java program to find perimeter of square.
+
+import java.util.Scanner;
+public class SquarePerimeter
+{
+   public static void main(String[] args)
+   {
+      int side, perimeter;
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter side length of square: ");
+      side = sc.nextInt();
+      perimeter = 4 * side;
+      System.out.print("Perimeter of square is: " + perimeter);
+      sc.close();
+   }
+}
+
+Here’s the java program to find area of square.
+
+import java.util.Scanner;
+public class FindAreaOfSquare
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter side of square: ");
+      double side = sc.nextDouble();
+      // formula area of square = side * side
+      double area = side * side;
+      System.out.println("Area of square is: " + area);
+      sc.close();
+   }
+}
