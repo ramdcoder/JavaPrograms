@@ -1,0 +1,46 @@
+Hexadecimal to octal in java
+
+[Hexadecimal to octal in java](https://www.flowerbrackets.com/hexadecimal-to-octal-in-java/)
+
+Let’s see program on how to convert hexadecimal to octal.
+
+import java.util.Scanner;
+public class HexadecimalToOctal
+{
+   public static void main(String[] args)
+   {
+      int decimalNumber, a = 1, b;
+      int[] octalNumber = new int[100];
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter a hexadecimal number: ");
+      String strHexNumber = sc.nextLine();
+      // converting hexadecimal number to decimal number
+      decimalNumber = hexToDecimal(strHexNumber);
+      // converting decimal to octal
+      while(decimalNumber != 0)
+      {
+         octalNumber[a++] = decimalNumber % 8;
+         decimalNumber = decimalNumber / 8;
+      }
+      System.out.print("Octal number is: ");
+      for(b = a - 1; b > 0; b--)
+      {
+         System.out.print(octalNumber[b]);
+      }
+      System.out.print("\n");
+      sc.close();
+   }
+   public static int hexToDecimal(String str)
+   {
+      String strDigits = "0123456789ABCDEF";
+      str = str.toUpperCase();
+      int value = 0;
+      for(int a = 0; a < str.length(); a++)
+      {
+         char ch = str.charAt(a);
+         int deci = strDigits.indexOf(ch);
+         value = 16 * value + deci;
+      }
+      return value;
+   }
+}
