@@ -1,0 +1,75 @@
+Remove duplicate elements in an array in java
+
+[Remove duplicate elements in an array in java](https://www.flowerbrackets.com/remove-duplicate-array-java/)
+
+Now let’s see program to remove duplicate elements in an array.
+
+public class RemoveDuplicateElementsDemo 
+{
+   public static int removeDuplicate(int[] arrNumbers, int num)
+   {  
+      if(num == 0 || num == 1)
+      {  
+         return num;  
+      }  
+      int[] arrTemporary = new int[num];  
+      int b = 0;  
+      for(int a = 0; a < num - 1; a++)
+      {  
+         if(arrNumbers[a] != arrNumbers[a + 1])
+         {  
+            arrTemporary[b++] = arrNumbers[a];  
+         }  
+      }  
+      arrTemporary[b++] = arrNumbers[num - 1]; 
+      for(int a = 0; a < b; a++)
+      {  
+         arrNumbers[a] = arrTemporary[a];  
+      }  
+      return b;  
+   }
+   public static void main(String[] args) 
+   {
+      int[] arrInput = {1, 2, 3, 3, 4, 5, 5, 6, 7, 8};  
+      int len = arrInput.length;  
+      len = removeDuplicate(arrInput, len);  
+      // printing elements
+      for(int a = 0; a < len; a++)
+      {
+         System.out.print(arrInput[a] + " ");
+      }
+   }
+}
+
+Now let’s learn program to remove duplicate elements in an array using seperate index.
+ 
+public class RemoveDuplicateUsingSeperateIndex
+{
+   public static int removeDuplicate(int[] arrNumbers, int num)
+   {
+      if(num == 0 || num == 1)
+      {
+         return num;
+      }
+      int b = 0;
+      for(int a = 0; a < num - 1; a++)
+      {
+         if(arrNumbers[a] != arrNumbers[a + 1])
+         {
+            arrNumbers[b++] = arrNumbers[a];
+         }
+      }
+      arrNumbers[b++] = arrNumbers[num - 1];
+      return b;
+   }
+   public static void main(String[] args)
+   {
+      int[] arrNumbers = {1, 2, 3, 3, 4, 5, 5, 6, 7, 8};
+      int len = arrNumbers.length;
+      len = removeDuplicate(arrNumbers, len);
+      for(int a = 0; a < len; a++)
+      {
+         System.out.print(arrNumbers[a] + " ");
+      }
+   }
+}
