@@ -1,0 +1,42 @@
+Java program to find largest of three numbers
+
+[Java program to find largest of three numbers](https://www.flowerbrackets.com/java-largest-of-three-numbers/)
+
+Here’s the program to find largest of three numbers using if-else…if.
+
+import java.util.Scanner;
+public class LargestOfThreeNumbersInJava
+{
+   public static void main(String[] args)
+   {
+      int a, b, c;
+      System.out.println("Please enter three numbers: ");
+      Scanner sc = new Scanner(System.in);
+      a = sc.nextInt();
+      b = sc.nextInt();
+      c = sc.nextInt();
+      if(a >= b && a >= c)
+         System.out.println(a + " is the largest number.");
+      else if(b >= a && b >= c)
+         System.out.println(b + " is the largest number.");
+      else
+         System.out.println(c + " is the largest number.");
+      sc.close();
+   }
+}
+
+In the below java program we are going to find greatest of three numbers in java without getting input from user or without using Scanner class.
+
+public class LargestOfThreeNumbersInJava
+{
+   public static void main(String[] args) 
+   {
+      int number1 = 52, number2 = 76, number3 = 83;  
+      if(number1 >= number2 && number1 >= number3)  
+         System.out.println(number1 + " is the largest number.");  
+      else if(number2 >= number1 && number2 >= number3)
+         System.out.println(number2 + " is the largest number.");  
+      else
+         System.out.println(number3 + " is the largest number.");
+   }
+}
