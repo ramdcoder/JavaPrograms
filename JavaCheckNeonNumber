@@ -1,0 +1,33 @@
+Java program to check neon number
+
+[Java program to check neon number](https://www.flowerbrackets.com/java-program-to-check-neon-number/)
+
+Now let’s see neon number program in java.
+
+import java.util.Scanner;
+public class NeonNumberInJava
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter number to check neon number or not: ");
+      int number = sc.nextInt();
+      int square = number * number;
+      int sum = 0;
+      while(square != 0)
+      {
+         int n = square % 10;
+         sum = sum + n;
+         square = square / 10;
+      }
+      if(sum == number)
+      {
+         System.out.println(number + " is a neon number.");
+      }
+      else
+      {
+         System.out.println(number + " is not a neon number.");
+      }
+      sc.close();
+   }
+}
