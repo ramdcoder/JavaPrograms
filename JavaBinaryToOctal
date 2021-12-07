@@ -1,0 +1,48 @@
+Binary to octal in java
+
+[Binary to octal in java](https://www.flowerbrackets.com/binary-to-octal-in-java/)
+
+Here’s program to convert binary to octal.
+
+public class BinaryToOctal
+{
+   public static void main(String[] args) 
+   {
+      BinaryToOctal obj = new BinaryToOctal();
+      System.out.println(obj.convertToOctal(1001100001));
+   }
+   int convertToDecimal(long binary)
+   {
+      int decimal = 0, a = 0;
+      while(binary > 0)
+      {
+         decimal += Math.pow(2, a++) * (binary % 10);
+         binary /= 10;
+      }
+      return decimal;
+   }
+   int convertToOctal(long binary)
+   {
+      int octal = 0, a = 0;
+      int decimalNumber = convertToDecimal(binary);
+      while(decimalNumber != 0)
+      {
+         octal += (decimalNumber % 8) * ((int)Math.pow(10, a++));
+         decimalNumber /= 8;
+      }
+      return octal;
+   }
+}
+
+2nd way: Now let’s see an example.
+
+public class UsingtoOctalStringMethod
+{
+   public static void main(String[] args)
+   {
+      String strNumber = "1001001100001";
+      int binary = Integer.parseInt(strNumber, 2);
+      String strOctal = Integer.toOctalString(binary);
+      System.out.println("Octal value is: " + strOctal);
+   }
+}
