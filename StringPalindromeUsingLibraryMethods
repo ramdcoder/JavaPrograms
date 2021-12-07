@@ -1,0 +1,30 @@
+Java program to check whether string is palindrome using library methods
+
+[Java program to check whether string is palindrome using library methods](https://www.flowerbrackets.com/java-program-to-check-palindrome-using-library-methods/)
+
+Here’s the java program to check whether string is palindrome using library methods.
+
+
+ 
+public class StringPalindromeJava
+{
+   public static void isPalindrome(String str)
+   {
+      String strReverse = new StringBuffer(str).reverse().toString();
+       // checking for palindrome
+      if(str.equals(strReverse))
+      {
+         System.out.println(str + " is palindrome string.");
+      }
+      else
+      {
+         System.out.println(str + " is not palindrome string.");
+      }
+   }
+   public static void main(String[] args)
+   {
+      // palindrome java
+      isPalindrome("eye");
+      isPalindrome("rotator");
+   }
+}
