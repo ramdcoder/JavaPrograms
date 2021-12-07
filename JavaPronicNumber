@@ -1,0 +1,35 @@
+Pronic number in java
+
+[Pronic number in java](https://www.flowerbrackets.com/pronic-number-in-java/)
+
+Now let’s see pronic number program or program to check pronic number.
+
+// pronic number program in java
+import java.util.Scanner;
+public class PronicNumberJava
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please input a number: ");
+      int number = sc.nextInt();
+      int pronic = 0;
+      for(int p = 0; p < number; p++)
+      {
+         if(p * (p + 1) == number)
+         {
+            pronic = 1;
+            break;
+         }
+      }
+      if(pronic == 1)
+      {
+         System.out.println(number + " is a pronic number.");
+      }
+      else
+      {
+         System.out.println(number + " is not a pronic number.");
+      }
+      sc.close();
+   }
+}
