@@ -1,0 +1,42 @@
+Java program to find LCM of two numbers
+
+[Java program to find LCM of two numbers](https://www.flowerbrackets.com/java-program-to-find-lcm-of-two-numbers/)
+
+Here’s lcm of two numbers in java using while loop and if statement.
+
+public class LCMOfTwoNumbers
+{
+   public static void main(String[] args)
+   { 
+      int num1 = 85, num2 = 175, lcm;
+      lcm = (num1 > num2) ? num1 : num2;
+      while(true)
+      {
+         if(lcm % num1 == 0 && lcm % num2 == 0)
+         {
+            System.out.println("LCM of " + num1 + " and " + num2 + " is " + lcm + ".");
+            break;
+         }
+         ++lcm;
+      }
+   }
+}
+
+To find lcm of two numbers in java we can use GCD. Here’s the java program.
+
+public class LCMUsingGCD 
+{
+   public static void main(String[] args) 
+   {
+      int num1 = 15, num2 = 25, gcd = 1;
+      for(int a = 1; a <= num1 && a <= num2; ++a)
+      {
+         if(num1 % a == 0 && num2 % a == 0)
+         {
+            gcd = a;
+         }
+      }
+      int lcm = (num1 * num2) / gcd;
+      System.out.println("LCM of " + num1 + " and " + num2 + " is " + lcm + ".");
+   }
+}
