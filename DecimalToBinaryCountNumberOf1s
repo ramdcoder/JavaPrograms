@@ -1,0 +1,33 @@
+Java program to convert decimal number to binary & count number of 1s
+
+[Java program to convert decimal number to binary & count number of 1s](https://www.flowerbrackets.com/java-program-convert-decimal-to-binary-count-number-1s/)
+
+Here’s the java program to convert decimal to binary using while loop.
+
+// decimal to binary conversion in java
+import java.util.Scanner;
+public class DecimalBinaryDemo
+{
+   public static void main(String[] args)
+   {
+      int number, count = 0, temp;
+      String strConvert = "";
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter a decimal number : ");
+      number = sc.nextInt();
+      // decimal to binary java
+      while(number > 0)
+      {
+         temp = number % 2;
+         if(temp == 1)
+         {
+            count++;
+         }
+         strConvert = strConvert + " " + temp;
+         number = number / 2;
+      }
+      System.out.println("Decimal to binary in java : " + strConvert);
+      System.out.println("Number of 1s : " + count);
+      sc.close();
+   }
+}
