@@ -1,0 +1,20 @@
+Hexadecimal to binary in java
+
+[Hexadecimal to binary in java](https://www.flowerbrackets.com/hexadecimal-to-binary-in-java/)
+
+Here’s the program to convert hexadecimal to binary.
+
+import java.util.Scanner;
+public class HexadecimalToBinaryJava 
+{
+   public static void main(String[] args)
+   {
+      int number;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter a number to convert hexadecimal to binary: ");
+      number = Integer.parseInt(sc.nextLine(), 16);
+      String strBinary = Integer.toBinaryString(number);
+      System.out.println("Binary value is: " + strBinary);
+      sc.close();
+   }
+}
