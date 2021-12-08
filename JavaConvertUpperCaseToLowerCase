@@ -1,0 +1,30 @@
+Convert uppercase to lowercase in java without using string function
+
+[Convert uppercase to lowercase in java without using string function](https://www.flowerbrackets.com/convert-uppercase-to-lowercase-in-java-without-using-string-function/)
+
+Now let’s see program to convert uppercase to lowercase without using string function.
+
+import java.util.Scanner;
+public class WithoutStringFunction
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter any string to convert to lowercase: ");
+      String strInput = sc.nextLine();
+      char[] ch = strInput.toCharArray();
+      for(int a = 0; a < ch.length; a++)
+      {
+         if(ch[a] >= 'A' && ch[a] <= 'Z')
+         {
+            ch[a] = (char)((int)ch[a] + 32);
+         }
+      }
+      System.out.println("string in lowercase is: ");
+      for(int a = 0; a < ch.length; a++)
+      {
+         System.out.print(ch[a]);
+      }
+      sc.close();
+   }
+}
