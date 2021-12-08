@@ -1,0 +1,23 @@
+Area and perimeter of trapezium in java
+
+[Area and perimeter of trapezium in java](https://www.flowerbrackets.com/area-and-perimeter-of-trapezium-in-java/)
+
+Now let’s see java program.
+
+import java.util.*;
+public class AreaAndPerimeterOfTrapezium
+{
+   public static void main(String[] args)
+   {
+      float a = 6;
+      float b = 14;
+      float c = 10;
+      float d = 5;
+      float h = 21;
+      float area = (float) (0.5 * (a + b) * h);
+      // a, b, c and d are sides of trapezium
+      float perimeter = a + b + c + d;
+      System.out.println("area of trapezium is: " + area);
+      System.out.println("perimeter of trapezium is: " + perimeter);
+   }
+}
