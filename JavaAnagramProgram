@@ -1,0 +1,77 @@
+Anagram java program
+
+[Anagram java program](https://www.flowerbrackets.com/anagram-java-program/)
+
+Now let’s check whether two strings are anagram or not.
+
+import java.util.Arrays;
+public class StringAnagramProgram
+{
+   public static void main(String[] args)
+   {
+      String strOne = "Silent";
+      String strTwo = "Listen";
+      strOne = strOne.toLowerCase();
+      strTwo = strTwo.toLowerCase();
+      // checking if two strings length are same
+      if(strOne.length() == strTwo.length())
+      {
+         // converting strings to char array
+         char[] charOne = strOne.toCharArray();
+         char[] charTwo = strTwo.toCharArray();
+         // sorting character array
+         Arrays.sort(charOne);
+         Arrays.sort(charTwo);
+         // if sorted character arrays are same then the string is anagram
+         boolean output = Arrays.equals(charOne, charTwo);
+         if(output)
+         {
+            System.out.println(strOne + " and " + strTwo + " are anagram.");
+         }
+         else
+         {
+            System.out.println(strOne + " and " + strTwo + " are not anagram.");
+         }
+      }
+      else
+      {
+         System.out.println(strOne + " and " + strTwo + " are not anagram.");
+      }
+   }
+}
+
+In the below program we are going to write a function to check if two strings are anagrams java.
+
+import java.util.Arrays;
+public class AnagramUsingFunction
+{
+   public static void main(String[] args)
+   {
+      char[] ch1 = { 'e', 'l', 'v', 'i', 's' };
+      char[] ch2 = { 'l', 'i', 'v', 'e', 's' };
+      if(checkAnagram(ch1, ch2))
+      {
+         System.out.println("two strings are anagram.");
+      }
+      else
+      {
+         System.out.println("two strings are not anagram.");
+      }
+   }
+   static boolean checkAnagram(char[] ch1, char[] ch2)
+   {
+      int len1 = ch1.length;
+      int len2 = ch2.length;
+      // if length of both strings is not equal it cannot be anagram
+      if(len1 != len2)
+         return false;
+      // sorting both strings
+      Arrays.sort(ch1);
+      Arrays.sort(ch2);
+      // compare sorted strings
+      for(int a = 0; a < len1; a++)
+         if(ch1[a] != ch2[a])
+            return false;
+         return true;
+   }
+}
