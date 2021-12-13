@@ -1,0 +1,26 @@
+Decimal number to binary in java using recursion
+
+[Decimal number to binary in java using recursion](https://www.flowerbrackets.com/decimal-number-to-binary-in-java-using-recursion/)
+
+Here’s the program to convert decimal to binary using recursion. The logic to convert decimal to binary using recursion is,
+
+if(decimal == 0)
+return 0;
+else
+return(decimal % 2 + 10 * toBinary(decimal / 2));
+
+public class DecimalToBinaryUsingRecursion
+{
+   public static void main(String[] args)
+   {
+      int inputDecimal = 50;
+      System.out.println(toBinary(inputDecimal));
+   }
+   static int toBinary(int decimal)
+   {
+      if(decimal == 0)
+         return 0;
+      else
+         return(decimal % 2 + 10 * toBinary(decimal / 2));
+   }
+}
