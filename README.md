@@ -200,3 +200,5 @@ Let's learn basic java programs.
 [Perimeter of parallelogram in java](https://www.flowerbrackets.com/perimeter-of-parallelogram-in-java/)
 
 [Anagram java program](https://www.flowerbrackets.com/anagram-java-program/)
+
+[Array java programs examples with output for practice](https://www.flowerbrackets.com/array-java-programs-examples/)
