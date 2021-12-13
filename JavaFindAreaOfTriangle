@@ -1,0 +1,22 @@
+Java program to find area of triangle
+
+[Java program to find area of triangle](https://www.flowerbrackets.com/java-program-to-find-area-of-triangle/)
+
+Here’s the java program to calculate area of triangle.
+
+import java.util.Scanner;
+public class FindAreaOfTriangle
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter width of triangle: ");
+      double base = sc.nextDouble();
+      System.out.println("Please enter height of triangle: ");
+      double height = sc.nextDouble();
+      // formula area of triangle = (width * height) / 2
+      double area = (base * height) / 2;
+      System.out.println("Area of triangle is: " + area);
+      sc.close();
+   }
+}
