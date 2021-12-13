@@ -1,0 +1,36 @@
+Java program to convert decimal to hexadecimal using recursion
+
+[Java program to convert decimal to hexadecimal using recursion](https://www.flowerbrackets.com/java-program-to-convert-decimal-to-hexadecimal-using-recursion/)
+
+Here’s the program to convert decimal to hexadecimal using recursion.
+
+import java.util.Scanner;
+class DecimalToHexaDemo
+{
+   char[] charHexa ={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+   int num;
+   String strHex = "";
+   String hexadecimal(int h)
+   {
+      if(h != 0)
+      {
+         num = h % 16;
+         strHex = charHexa[num] + strHex;
+         h = h / 16;
+         hexadecimal(h);
+      }
+      return strHex;
+   }
+   public static void main(String[] args)
+   {
+      DecimalToHexaDemo obj = new DecimalToHexaDemo();
+      int decimal;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter decimal number: ");
+      decimal = sc.nextInt();
+      System.out.println("Hexadecimal number is: ");
+      String hex = obj.hexadecimal(decimal);
+      System.out.println(hex);
+      sc.close();
+   }
+}
