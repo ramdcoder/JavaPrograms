@@ -198,3 +198,5 @@ Let's learn basic java programs.
 [Area of parallelogram in java](https://www.flowerbrackets.com/area-of-parallelogram-in-java/)
 
 [Perimeter of parallelogram in java](https://www.flowerbrackets.com/perimeter-of-parallelogram-in-java/)
+
+[Anagram java program](https://www.flowerbrackets.com/anagram-java-program/)
