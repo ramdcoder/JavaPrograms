@@ -204,3 +204,5 @@ Let's learn basic java programs.
 [Array java programs examples with output for practice](https://www.flowerbrackets.com/array-java-programs-examples/)
 
 [Java program to find area of circle using bufferedreader](https://www.flowerbrackets.com/java-program-to-find-area-of-circle-using-bufferedreader/)
+
+[Addition of two numbers in java using class and objects](https://www.flowerbrackets.com/addition-of-two-numbers-in-java-using-class-and-objects/)
