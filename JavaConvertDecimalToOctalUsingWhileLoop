@@ -1,0 +1,26 @@
+Java program convert decimal to octal using while loop
+
+[Java program convert decimal to octal using while loop](https://www.flowerbrackets.com/java-program-convert-decimal-to-octal-using-while-loop/)
+
+Let’s learn to convert decimal number to octal using while loop.
+
+import java.util.Scanner;
+public class DecimalToOctalUsingWhileLoop
+{
+   public static void main(String[] args)
+   {
+      int decimal;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter decimal number: ");
+      decimal = sc.nextInt();
+      int octalNumber = 0, a = 1;
+      while(decimal > 0)
+      {
+         octalNumber += a * (decimal % 8);
+         decimal = decimal / 8;
+         a = a * 10;
+      }
+      System.out.println("Octal number is: " + octalNumber);
+      sc.close();
+   }
+}
