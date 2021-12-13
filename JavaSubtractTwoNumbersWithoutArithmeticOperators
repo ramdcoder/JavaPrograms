@@ -1,0 +1,24 @@
+Subtract two numbers without using arithmetic operators in java
+
+[Subtract two numbers without using arithmetic operators in java](https://www.flowerbrackets.com/subtract-two-numbers-without-using-arithmetic-operators-java/)
+
+Here is the program on how to subtract two numbers without using arithmetic operators.
+
+public class SubtractWithoutArithmeticOperators
+{
+   static int subtractNumber(int i, int j)
+   {
+      while(j != 0)
+      {
+         int carry = (~i) & j;
+         i = i ^ j;
+         j = carry << 1;
+      }
+      return i;
+   }
+   public static void main(String[] args)
+   {
+      int a = 23, b = 10;
+      System.out.println("a - b is " + subtractNumber(a, b));
+   }
+}
