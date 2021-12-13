@@ -1,0 +1,45 @@
+Remove element from a specific index from an array in java
+
+[Remove element from a specific index from an array in java](https://www.flowerbrackets.com/remove-element-from-a-specific-index-from-an-array-in-java/)
+
+Here’s the program to remove element from a specific index from an array.
+
+import java.util.Arrays;
+public class RemoveElementDemo
+{
+   // remove element method 
+   public static int[] removeElement(int[] arrGiven, int index) 
+   {
+      // if empty 
+      if(arrGiven == null || index < 0 || index >= arrGiven.length) 
+      {
+         return arrGiven; 
+      }
+      // creating another array one less than initial array 
+      int[] newArray = new int[arrGiven.length - 1];
+      // copying elements except index 
+      for(int a = 0, b = 0; a < arrGiven.length; a++) 
+      { 
+         if(a == index)
+         {
+            continue;
+         }
+         newArray[b++] = arrGiven[a]; 
+      }
+      return newArray; 
+   }
+   public static void main(String[] args) 
+   { 
+      int[] arrInput = { 2, 4, 6, 8, 10 };
+      // printing given array 
+      System.out.println("Given array: " + Arrays.toString(arrInput));
+      // getting specified index 
+      int index = 3;
+      // print index 
+      System.out.println("Index to be removed: " + index);
+      // removing element 
+      arrInput = removeElement(arrInput, index);
+      // printing new array 
+      System.out.println("New array: " + Arrays.toString(arrInput));
+   }
+}
