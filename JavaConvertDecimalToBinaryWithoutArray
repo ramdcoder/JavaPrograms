@@ -1,0 +1,26 @@
+Convert decimal number to binary in java without using array
+
+[Convert decimal number to binary in java without using array](https://www.flowerbrackets.com/convert-decimal-number-to-binary-in-java-without-using-array/)
+
+Here’s the java program to convert decimal to binary without using array.
+
+public class DecimalToBinaryWithoutArray
+{
+   static void toBinary(int num)
+   { 
+      StringBuilder sb = new StringBuilder(); 
+      int a = 0;
+      while(num > 0)
+      {
+         sb.append(num % 2);
+         a++;
+         num = num / 2;
+      }
+      System.out.println(sb.reverse()); 
+   }
+   public static void main(String[] args) 
+   {
+      int number = 20; 
+      toBinary(number);
+   }
+}
