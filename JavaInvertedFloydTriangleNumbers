@@ -1,0 +1,53 @@
+Inverted floyd triangle of numbers in java
+
+[Inverted floyd triangle of numbers in java](https://www.flowerbrackets.com/inverted-floyd-triangle-in-java/)
+
+Now let’s learn to print inverted floyd triangle of numbers in java. Here’s the java program.
+
+import java.util.Scanner;
+public class InvertedFloydTriangleDemo
+{
+   public static void main(String[] args) 
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter size limit: ");
+      int num = sc.nextInt();
+      int a, b, x = 0;
+      System.out.println("Here's Inverted Floyd Triangle of Numbers: ");
+      for(a = 1; a <= num; a++)
+      {
+         for(b = 1; b <= a; b++)
+            x++;
+      }
+      for(a = num; a >= 1; a--)
+      {
+         for(b = 1; b <= a; b++)
+         {
+            System.out.print(x + " ");
+            x--;
+         }
+         System.out.println();
+      }
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter size limit: 5
+Here’s Inverted Floyd Triangle of Numbers:
+15 14 13 12 11
+10 9 8 7
+6 5 4
+3 2
+1
+
+Please enter size limit: 6
+Here’s Inverted Floyd Triangle of Numbers:
+21 20 19 18 17 16
+15 14 13 12 11
+10 9 8 7
+6 5 4
+3 2
+1
