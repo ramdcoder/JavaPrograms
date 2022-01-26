@@ -1,0 +1,29 @@
+Reverse factorial program in java
+
+[Reverse factorial program in java](https://www.flowerbrackets.com/reverse-factorial-program-in-java/)
+
+Here’s reverse factorial program. Here we are using for loop to compute the reverse factorial.
+
+import java.util.Scanner;
+public class ReverseFactorialProgram
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter a number to compute reverse factorial: ");
+      int number = sc.nextInt();
+      int reverse = number;
+      for(int a = 2; reverse != a; a++)
+      {
+         reverse = reverse / a;
+      }
+      System.out.println("Reverse factorial of " + number + " is: " + reverse);
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter a number to compute reverse factorial: 720
+Reverse factorial of 720 is: 6
