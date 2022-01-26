@@ -1,0 +1,35 @@
+Factorial from 1 to 10 in java
+
+[Factorial from 1 to 10 in java](https://www.flowerbrackets.com/factorial-from-1-to-10-in-java/)
+
+Here’s the factorial from 1 to 10. We are using for loop which loops from 1 to 10.
+
+public class FactorialFrom1To10
+{
+   public static void main(String[] args)
+   {
+      int count;
+      long factorial = 1;
+      System.out.printf("%4s%30s\n", "Number", "Factorials");
+      for(count = 1; count <= 10; count++)
+      {
+         factorial *= count;
+         System.out.printf("%4d%,30d\n", count, factorial);
+      }
+   }
+}
+
+
+Output:
+
+Number Factorials
+1 1
+2 2
+3 6
+4 24
+5 120
+6 720
+7 5,040
+8 40,320
+9 362,880
+10 3,628,800
