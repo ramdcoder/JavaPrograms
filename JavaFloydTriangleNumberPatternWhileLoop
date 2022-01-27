@@ -1,0 +1,38 @@
+Floyd’s triangle number pattern using while loop in java
+
+[Floyd’s triangle number pattern using while loop in java](https://www.flowerbrackets.com/floyds-triangle-number-pattern-using-while-loop-in-java/)
+
+Let’s see floyd’s triangle number pattern.
+
+public class FloydTriangleWhileLoop
+{
+   public static void main(String[] args) 
+   {
+      int a = 1;
+      while(a <= 10)
+      {
+         int b = 1;
+         while(b <= a)
+         {
+            System.out.print(b + " ");
+            b++;
+         }
+         System.out.println();
+         a++;
+      }
+   }
+}
+
+
+Output:
+
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
+1 2 3 4 5 6 7
+1 2 3 4 5 6 7 8
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9 10
