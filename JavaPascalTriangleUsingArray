@@ -1,0 +1,51 @@
+Pascal triangle in java using array
+
+[Pascal triangle in java using array](https://www.flowerbrackets.com/pascal-triangle-in-java-using-array/)
+
+Here’s program to display pascal triangle using array.
+
+import java.util.Scanner;
+public class PascalTriangleUsingArray
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      int num, a, b, arr[][], p;
+      System.out.println("Please enter number of rows: ");
+      num = sc.nextInt();
+      p = num - 1;
+      arr = new int[num][num];
+      for(a = 0; a < num; a++)
+      {
+         for(b = 0; b <= a; b++)
+            if(b == 0 || b == a)
+               arr[a][b] = 1;
+            else
+               arr[a][b] = arr[a - 1][b - 1] + arr[a - 1][b];
+      }
+      System.out.println("Pascal's triangle: \n");
+      for(a = 0; a < num; a++)
+      {
+         for(b = 0; b <= p; b++)
+            System.out.print(" ");
+         p--;
+         for(b = 0; b <= a; b++)
+            System.out.print(arr[a][b] + " ");
+         System.out.println();
+      }
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter number of rows:
+6
+Pascal’s triangle:
+1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1
+1 5 10 10 5 1
