@@ -266,3 +266,5 @@ Let's learn basic java programs.
 [String palindrome in java without using reverse method](https://www.flowerbrackets.com/string-palindrome-in-java-without-using-reverse-method/)
 
 [Java program bubble sort in ascending and descending order](https://www.flowerbrackets.com/java-program-bubble-sort-in-ascending-and-descending-order/)
+
+[Transpose of a matrix in java without using second matrix](https://www.flowerbrackets.com/transpose-of-a-matrix-in-java-without-using-second-matrix/)
