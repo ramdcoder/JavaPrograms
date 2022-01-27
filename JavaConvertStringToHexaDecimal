@@ -1,0 +1,32 @@
+Convert String to HexaDecimal in java
+
+[Convert String to HexaDecimal in java](https://www.flowerbrackets.com/string-to-hexadecimal-in-java/)
+
+Let’s see an example on converting string to hexadecimal.
+
+import java.util.Scanner;
+public class StringToHexJava
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter a string: ");
+      String strInput = sc.next();
+      StringBuffer sb = new StringBuffer();
+      char[] chArray = strInput.toCharArray();
+      for(int a = 0; a < chArray.length; a++)
+      {
+         String strHexadecimal = Integer.toHexString(chArray[a]);
+         sb.append(strHexadecimal);
+      }
+      String strOutput = sb.toString();
+      System.out.println(strOutput);
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter a string: flowerbrackets
+666c6f776572627261636b657473
