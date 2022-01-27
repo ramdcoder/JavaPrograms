@@ -1,0 +1,43 @@
+Check leap year or not using conditional operator in java
+
+[Check leap year or not using conditional operator in java](https://www.flowerbrackets.com/leap-year-using-conditional-operator-in-java/)
+
+Now let’s see program to check leap year or not using conditional operator.
+
+import java.util.Scanner;
+public class LeapYearExample 
+{
+   public static void main(String[] args) 
+   {
+      long number, year, a;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter any year :");
+      year = sc.nextLong();        
+      if(year != 0)
+      {
+         number = (year % 400 == 0)?(a = 1):((year % 100 == 0)?(a = 0):((year % 4 == 0)?(a = 1):(a = 0)));      
+         if(number == 1)
+         {
+            System.out.println(year + " is a leap year");
+         }
+         else
+         {
+            System.out.println(year + " is not a leap year");
+         }
+      }
+      else
+      {
+         System.out.println("year zero does not exist ");
+      }
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter any year :2002
+2002 is not a leap year
+
+Please enter any year :2004
+2004 is a leap year
