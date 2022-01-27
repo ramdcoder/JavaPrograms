@@ -1,0 +1,55 @@
+Transpose of a matrix in java using BufferedReader
+
+[Transpose of a matrix in java using BufferedReader](https://www.flowerbrackets.com/transpose-of-a-matrix-in-java-using-bufferedreader/)
+
+Here’s the transpose of a matrix using BufferedReader.
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class TransposeMatrixDemo 
+{
+   public static void main(String[] args) throws IOException 
+   {
+      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+      System.out.print("Please enter number of rows: ");
+      int row = Integer.parseInt(br.readLine());
+      System.out.print("Please enter number of columns: ");
+      int col = Integer.parseInt(br.readLine());
+      int[][] arrMatrix = new int[row][col];
+      int[][] arrTranspose = new int[row][col];
+      System.out.println("Please enter elements of matrix: ");
+      for(int a = 0; a < row; a++) 
+      {
+         for(int b = 0; b < col; b++) 
+         {
+            arrMatrix[a][b] = Integer.parseInt(br.readLine());
+         }
+      }
+      System.out.println("Given Matrix\n");
+      for(int a = 0; a < row; a++) 
+      {
+         for(int b = 0; b < col; b++) 
+         {
+            System.out.print(arrMatrix[a][b] + " ");
+         }
+         System.out.print("\n");
+      }
+      for(int a = 0; a < row; a++) 
+      {
+         for(int b = 0; b < col; b++) 
+         {
+            arrTranspose[b][a] = arrMatrix[a][b];
+         }
+      }
+      System.out.println("Transpose matrix in java \n");
+      for(int a = 0; a < col; a++) 
+      {
+         for(int b = 0; b < row; b++) 
+         {
+            System.out.print(arrTranspose[a][b] + " ");
+         }
+         System.out.print("\n");
+      }
+   }
+}
