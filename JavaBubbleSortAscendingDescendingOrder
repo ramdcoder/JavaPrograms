@@ -1,0 +1,43 @@
+Java program bubble sort in ascending and descending order
+
+[Java program bubble sort in ascending and descending order](https://www.flowerbrackets.com/java-program-bubble-sort-in-ascending-and-descending-order/)
+
+import java.util.Scanner;
+public class BubbleSortAscending 
+{
+   public static void main(String[] args) 
+   {
+      int number, a, b, temp;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter number of integers: ");
+      number = sc.nextInt();
+      int[] arrInput = new int[number];
+      System.out.println("Enter " + number + " integers: ");
+      for(a = 0; a < number; a++) 
+         arrInput[a] = sc.nextInt();
+      for(a = 0; a < (number - 1); a++)
+      {
+         for(b = 0; b < number - a - 1; b++)
+         {
+            // logic to sort in ascending order
+            if(arrInput[b] > arrInput[b + 1]) 
+            {
+               temp = arrInput[b];
+               arrInput[b] = arrInput[b + 1];
+               arrInput[b + 1] = temp;
+            }
+         }
+      }
+      sc.close();
+      System.out.println("Sorted integers: ");
+      for(a = 0; a < number; a++) 
+         System.out.println(arrInput[a]);
+   }
+}
+
+
+Output:
+
+Please enter number of integers: 7
+Enter 7 integers: 12 26 15 39 58 48 59
+Sorted integers: 12 15 26 39 48 58 59
