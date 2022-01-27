@@ -1,0 +1,74 @@
+Java program to find trace of a matrix
+
+[Java program to find trace of a matrix](https://www.flowerbrackets.com/java-program-to-find-trace-of-a-matrix/)
+
+Here’s the java program.
+
+import java.util.Scanner;
+public class TraceMatrixDemo 
+{
+   public static void main(String[] args) 
+   {
+      int[][] arrInput = new int[10][10];
+      int a, b;
+      double total = 0;
+      System.out.println("Please enter total rows and columns: ");
+      Scanner sc = new Scanner(System.in);
+      int row = sc.nextInt();
+      int column = sc.nextInt();
+      System.out.println("Please enter matrix: ");
+      for(a = 0; a < row; a++)
+      {
+         for(b = 0; b < column; b++) 
+         {
+            arrInput[a][b] = sc.nextInt();
+            System.out.print(" ");
+         }
+      }
+      System.out.println("Entered matrix is: ");
+      for(a = 0; a < row; a++)
+      {
+         for(b = 0; b < column; b++)
+         {
+            System.out.println(arrInput[a][b] + " ");
+         }
+         System.out.println(" ");
+      }
+      System.out.println("Trace of a matrix: ");
+      for(a = 0; a < row; a++)
+      {  
+         for(b = 0; b < column; b++)
+         {
+            if(a == b)
+            {
+               total = total + (arrInput[a][b]);
+            }
+         }
+      }
+      System.out.println(total);
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter total rows and columns:
+3
+3
+Please enter matrix:
+2
+4
+6
+8
+1
+3
+5
+7
+9
+Entered matrix is:
+2 4 6
+8 1 3
+5 7 9
+Trace of a matrix:
+12.0
