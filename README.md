@@ -242,3 +242,5 @@ Let's learn basic java programs.
 [Linear search in java using recursion](https://www.flowerbrackets.com/linear-search-in-java-using-recursion/)
 
 [Check leap year or not using conditional operator in java](https://www.flowerbrackets.com/leap-year-using-conditional-operator-in-java/)
+
+[Convert String to HexaDecimal in java](https://www.flowerbrackets.com/string-to-hexadecimal-in-java/)
