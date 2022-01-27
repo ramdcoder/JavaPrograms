@@ -240,3 +240,5 @@ Let's learn basic java programs.
 [Java program to find trace of a matrix](https://www.flowerbrackets.com/java-program-to-find-trace-of-a-matrix/)
 
 [Linear search in java using recursion](https://www.flowerbrackets.com/linear-search-in-java-using-recursion/)
+
+[Check leap year or not using conditional operator in java](https://www.flowerbrackets.com/leap-year-using-conditional-operator-in-java/)
