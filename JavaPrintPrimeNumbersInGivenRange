@@ -1,0 +1,49 @@
+Java program to print prime numbers in a given range
+
+[Java program to print prime numbers in a given range](https://www.flowerbrackets.com/java-program-to-print-prime-numbers-in-a-given-range/)
+
+import java.util.Scanner;
+public class PrimeNumberRangeDemo
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter starting number: ");
+      int startNumber = sc.nextInt();
+      System.out.print("Please enter ending number: ");
+      int endNumber = sc.nextInt();
+      System.out.println("Prime numbers between range " + startNumber + " and " + endNumber + " are: ");
+      int counter;
+      for(int a = startNumber ; a <= endNumber ; a++)
+      {
+         // here's the logic to check if number is prime or not
+         counter = 0;
+         for(int b = 1 ; b <= a ; b++)   
+         {
+            if(a % b == 0)
+               counter = counter + 1;
+         }
+         if(counter == 2)
+            System.out.println(a);
+      }
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter starting number: 10
+Please enter ending number: 50
+Prime numbers between range 10 and 50 are:
+11
+13
+17
+19
+23
+29
+31
+37
+41
+43
+47
