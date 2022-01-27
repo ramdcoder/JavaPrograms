@@ -264,3 +264,5 @@ Let's learn basic java programs.
 [Java program to check palindrome number using recursion](https://www.flowerbrackets.com/java-program-to-check-palindrome-number-using-recursion/)
 
 [String palindrome in java without using reverse method](https://www.flowerbrackets.com/string-palindrome-in-java-without-using-reverse-method/)
+
+[Java program bubble sort in ascending and descending order](https://www.flowerbrackets.com/java-program-bubble-sort-in-ascending-and-descending-order/)
