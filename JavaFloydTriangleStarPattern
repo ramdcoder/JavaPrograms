@@ -1,0 +1,43 @@
+Floyd’s triangle star pattern in java
+ 
+[Floyd’s triangle star pattern in java](https://www.flowerbrackets.com/floyds-triangle-star-pattern-in-java/)
+ 
+Here we are using nested for loop to print floyd’s triangle star pattern.
+
+import java.util.Scanner;
+public class FloydTriangleStars
+{
+   public static void main(String[] args) 
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter the number of rows of floyd's triangle you want to print: ");
+      int rows = sc.nextInt();
+      System.out.println("Printing floyd's triangle star pattern in java");
+      for(int a = 0; a <= rows; a++)
+      {
+         for(int b = 0; b <= a; b++)
+         {
+            System.out.print("*");
+         }
+         System.out.println();
+      }
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter the number of rows of floyd’s triangle you want to print: 10
+Printing floyd’s triangle star pattern in java
+
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
