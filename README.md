@@ -228,3 +228,13 @@ Let's learn basic java programs.
 [Display even and odd numbers in java using for loop](https://www.flowerbrackets.com/display-even-and-odd-numbers-in-java-using-for-loop/)
 
 [Armstrong number in java using recursion](https://www.flowerbrackets.com/armstrong-number-in-java-using-recursion/)
+
+[Inverted floyd triangle of numbers in java](https://www.flowerbrackets.com/inverted-floyd-triangle-in-java/)
+
+[Reverse factorial program in java](https://www.flowerbrackets.com/reverse-factorial-program-in-java/)
+
+[Factorial from 1 to 10 in java](https://www.flowerbrackets.com/factorial-from-1-to-10-in-java/)
+
+[4 Digit Armstrong number in java](https://www.flowerbrackets.com/4-digit-armstrong-number-in-java/)
+
+[Java program to find trace of a matrix](https://www.flowerbrackets.com/java-program-to-find-trace-of-a-matrix/)
