@@ -1,0 +1,57 @@
+Transpose of a matrix in java without using second matrix
+
+[Transpose of a matrix in java without using second matrix](https://www.flowerbrackets.com/transpose-of-a-matrix-in-java-without-using-second-matrix/)
+
+Here’s the program for transpose of a matrix without using second matrix or another array.
+
+import java.util.Scanner;
+public class WithoutSecondMatrix
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      int a, b, row, column, temp;
+      System.out.println("Please enter number of rows: ");
+      row = sc.nextInt();
+      System.out.println("Please enter the number of columns: ");
+      column = sc.nextInt();
+      int[][] matrix = new int[row][column];
+      System.out.println("Please enter elements of matrix: ");
+      for(a = 0; a < row; a++)
+      {
+         for(b = 0; b < column; b++)
+         {
+            matrix[a][b] = sc.nextInt();
+         }
+      }
+      System.out.println("Elements of the matrix: ");
+      for(a = 0; a < row; a++)
+      {
+         for(b = 0; b < column; b++)
+         {
+            System.out.print(matrix[a][b] + "\t");
+         }
+         System.out.println("");
+      }
+      // transpose of a matrix
+      for(a = 0; a < row; a++)
+      {
+         for(b = 0; b < a; b++)
+         {
+            temp = matrix[a][b];
+            matrix[a][b] = matrix[b][a];
+            matrix[b][a] = temp;
+         }
+      }
+      System.out.println("transpose of a matrix without using second matrix: ");
+      for(a = 0; a < row; a++)
+      {
+         for(b = 0; b < column; b++)
+         {
+            System.out.print(matrix[a][b] + "\t");
+         }
+         System.out.println("");
+      }
+      sc.close();
+   }
+}
