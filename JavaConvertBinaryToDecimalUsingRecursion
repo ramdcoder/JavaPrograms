@@ -1,0 +1,28 @@
+Convert binary to decimal in java using recursion
+
+[Convert binary to decimal in java using recursion](https://www.flowerbrackets.com/convert-binary-to-decimal-in-java-using-recursion/)
+
+Now let’s learn recursion program to convert binary to decimal.
+
+public class BinaryToDecimalRecursion
+{
+   static int binaryToDecimal(String strBinary, int a) 
+   {
+      int size = strBinary.length(); 
+      if(a == size - 1)
+         return strBinary.charAt(a) - '0'; 
+      return((strBinary.charAt(a) - '0') << (size - a - 1)) + binaryToDecimal(strBinary, a + 1); 
+   }
+   public static void main(String[] args) 
+   {
+      String binaryNumber = "1111"; 
+      int n = 0;
+      System.out.println("Convert binary to decimal using recursion: ");
+      System.out.println(binaryToDecimal(binaryNumber, n));
+   }
+}
+
+
+Output:
+
+Convert binary to decimal using recursion: 15
