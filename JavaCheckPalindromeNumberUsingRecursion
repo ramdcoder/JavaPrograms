@@ -1,0 +1,33 @@
+Java program to check palindrome number using recursion
+
+[Java program to check palindrome number using recursion](https://www.flowerbrackets.com/java-program-to-check-palindrome-number-using-recursion/)
+
+public class PalindromeNumberRecursion
+{
+   static int palindromeRecursion(int number, int temp)
+   {
+      if(number == 0)
+         return temp;
+      // storing reverse of a number
+      temp = (temp * 10) + (number % 10);
+      return palindromeRecursion(number / 10, temp);
+   }
+   public static void main(String[] args)
+   {
+      int number = 141;
+      int temp = palindromeRecursion(number, 0);
+      if(temp == number)
+      {
+         System.out.println("number is palindrome.");
+      }
+      else
+      {
+         System.out.println("number is not palindrome.");
+      }
+   }
+}
+
+
+Output:
+
+number is palindrome.
