@@ -1,0 +1,39 @@
+Java program to print prime numbers from 2 to N
+
+[Java program to print prime numbers from 2 to N](https://www.flowerbrackets.com/java-program-to-print-prime-numbers-from-2-to-n/)
+
+Here’s program to print prime numbers from 2 to N.
+
+import java.util.Scanner;
+public class PrimeNumberFrom2Ton
+{
+   public static void main(String[] args) 
+   {
+      int loop, max;
+      System.out.print("Please enter highest (maximum) number: ");
+      Scanner sc = new Scanner(System.in);
+      max = sc.nextInt();
+      for(loop = 2; loop < max; ++loop)
+      {
+         if(findPrime(loop))
+         {
+            System.out.println(loop);
+         }
+      }
+      sc.close();
+   }
+   public static boolean findPrime(int number)
+   {
+      int a;
+      boolean boolPrime = true;
+      for(a = 2; a < number / 2; a++)
+      {
+         if(number%a == 0)
+         {
+            boolPrime = false;
+            break;
+         }
+      }
+      return boolPrime;
+   }
+}
