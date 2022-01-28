@@ -1,0 +1,27 @@
+Reverse a string in java without using reverse function
+
+[Reverse a string in java without using reverse function](https://www.flowerbrackets.com/reverse-a-string-in-java-without-using-reverse-function/)
+
+import java.util.Scanner;
+public class ReverseWithoutFunction 
+{
+   public static void main(String[] args) 
+   {
+      String strInput;
+      Scanner sc = new Scanner(System.in);  
+      System.out.print("Please enter a string: ");  
+      strInput = sc.nextLine();
+      System.out.print("After reversing string is: ");  
+      for(int a = strInput.length(); a > 0; --a)  
+      {
+         System.out.print(strInput.charAt(a - 1));  
+      }
+      sc.close();
+   }
+}
+
+
+Output:
+
+Please enter a string: helloworld
+After reversing string is: dlrowolleh
