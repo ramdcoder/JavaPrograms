@@ -1,0 +1,26 @@
+Sort characters alphabetically in a string in java
+
+[Sort characters alphabetically in a string in java](https://www.flowerbrackets.com/java-sort-string-characters-alphabetically/)
+
+Here’s the java code to arrange the letters of a string in alphabetical order.
+
+import java.util.Arrays;
+public class CharactersAlphabetically
+{
+   public static void main(String[] args)
+   {
+      String strInput = "flowerbrackets";
+      // converting string to char array
+      char[] ch = strInput.toCharArray();
+      // sorting char array
+      Arrays.sort(ch);
+      // converting char array to string
+      String strSorted = String.valueOf(ch);
+      System.out.println("sort string characters alphabetically: " + strSorted);
+   }
+}
+
+
+Output:
+
+sort string characters alphabetically: abceefklorrstw
