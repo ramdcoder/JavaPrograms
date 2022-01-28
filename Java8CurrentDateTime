@@ -1,0 +1,16 @@
+Get current date and time in java 8
+
+[Get current date and time in java 8](https://www.flowerbrackets.com/get-current-date-and-time-in-java-8/)
+
+import java.time.LocalTime;
+import java.time.ZoneId;
+public class CurrentDateTimeJava8 
+{
+   public static void main(String[] args) 
+   {
+      LocalTime lt1 = LocalTime.now();
+      System.out.println(lt1);
+      LocalTime lt2 = LocalTime.now(ZoneId.of("GMT+02:30"));
+      System.out.println(lt2);
+   }
+}
