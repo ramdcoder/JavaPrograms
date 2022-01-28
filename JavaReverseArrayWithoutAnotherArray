@@ -1,0 +1,37 @@
+Reverse an array without using another array in java
+
+[Reverse an array without using another array in java](https://www.flowerbrackets.com/reverse-an-array-without-using-another-array-in-java/)
+
+Here’s the java program.
+
+import java.util.Arrays;
+public class ReverseWithoutArray
+{
+   public int[] arrayReverse(int[] arrInput)
+   {
+      if(arrInput == null || arrInput.length <= 1)
+      {
+         System.out.println("Please enter valid array");
+      }
+      for(int a = 0; a < arrInput.length / 2; a++)
+      {
+         int temp = arrInput[a];
+         arrInput[a] = arrInput[arrInput.length - 1 - a];
+         arrInput[arrInput.length - 1 - a] = temp;
+      }
+      return arrInput;
+   }
+   public static void main(String[] args)
+   {
+      ReverseWithoutArray obj = new ReverseWithoutArray();
+      int[] arr = {2, 4, 6, 8, 10, 12, 14, 16};
+      System.out.println("Given array: " + Arrays.toString(arr));
+      System.out.println("Reversed array: " + Arrays.toString(obj.arrayReverse(arr)));
+   }
+}
+
+
+Output:
+
+Given array: [2, 4, 6, 8, 10, 12, 14, 16]
+Reversed array: [16, 14, 12, 10, 8, 6, 4, 2]
