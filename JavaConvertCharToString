@@ -1,0 +1,20 @@
+Convert char to string java
+
+[Convert char to string java](https://www.flowerbrackets.com/convert-char-to-string-java/)
+
+Let’s see an example on converting a char to a string.
+
+public class CharToStringJava
+{
+   public static void main(String[] args)
+   {
+      char ch ='G';
+      String str = Character.toString(ch);
+      System.out.println("char to string is: " + str);
+   }
+}
+
+
+Output:
+
+char to string java is: G
