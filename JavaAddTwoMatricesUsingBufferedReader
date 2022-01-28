@@ -1,0 +1,46 @@
+Add two matrices in java using bufferedreader
+
+[Add two matrices in java using bufferedreader](https://www.flowerbrackets.com/add-two-matrices-in-java-using-bufferedreader/)
+
+Here’s addition of two matrices using bufferedreader.
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class AddTwoMatrixUsingBufferedReader
+{
+   public static void main(String[] args) throws NumberFormatException, IOException
+   {
+      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+      int a, b;
+      int[][] arr1 = new int[2][2];
+      int[][] arr2 = new int[2][2];
+      int[][] addition = new int[2][2];
+      System.out.println("Please enter elements of first matrix: ");
+      for(a = 0; a < 2; a++)
+      {
+         for(b = 0; b < 2; b++)
+         {
+            arr1[a][b] = Integer.parseInt(br.readLine());
+         }
+      }
+      System.out.println("Please enter elements of second matrix: ");
+      for(a = 0; a < 2; a++)
+      {
+         for(b = 0; b < 2; b++)
+         {
+            arr2[a][b] = Integer.parseInt(br.readLine());
+         }
+      }
+      System.out.println("Addition of two matrix in java using bufferedreader: ");
+      for(a = 0; a < 2; a++)
+      {
+         for(b = 0; b < 2; b++)
+         {
+            addition[a][b] = arr1[a][b] + arr2[a][b];
+            System.out.print(" " + addition[a][b]);
+         }
+         System.out.println( );
+      }
+   }
+}
