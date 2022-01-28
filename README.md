@@ -294,3 +294,5 @@ Let's learn basic java programs.
 [Difference between for and for each loop in java](https://www.flowerbrackets.com/difference-between-for-and-for-each-loop-in-java/)
 
 [How to sort an array without using sort method in java](https://www.flowerbrackets.com/how-to-sort-an-array-in-java-without-using-sort-method/)
+
+[Sort characters alphabetically in a string in java](https://www.flowerbrackets.com/java-sort-string-characters-alphabetically/)
