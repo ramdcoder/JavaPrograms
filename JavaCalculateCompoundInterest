@@ -1,0 +1,27 @@
+Java program to calculate compound interest
+
+[Java program to calculate compound interest](https://www.flowerbrackets.com/java-program-to-calculate-compound-interest/)
+
+Here’s the compound interest program in java.
+
+public class CompoundInterestDemo 
+{
+   public void calculateCompound(int p, int t, double r, int n) 
+   {
+      double number = p * Math.pow(1 + (r / n), n * t);
+      double interest = number - p;
+      System.out.println("Compound interest after " + t + " years: " + interest);
+      System.out.println("Money after " + t + " years: " + number);
+   }
+   public static void main(String[] args) 
+   {
+      CompoundInterestDemo obj = new CompoundInterestDemo();
+      obj.calculateCompound(200000, 6, .06, 12);
+   }
+}
+
+
+Output:
+
+Compound interest after 6 years: 86408.8556983287
+Money after 6 years: 286408.8556983287
