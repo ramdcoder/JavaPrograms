@@ -1,0 +1,32 @@
+Reverse an array in java using for loop
+
+[Reverse an array in java using for loop](https://www.flowerbrackets.com/reverse-an-array-in-java-using-for-loop/)
+
+ Here’s the program to reverse an array using for loop.
+
+public class ReverseArrayUsingForLoop 
+{
+   public static void main(String[] args) 
+   {
+      int[] arrNumbers = new int[]{2, 4, 6, 8, 10};  
+      System.out.println("Given array: ");  
+      for(int a = 0; a < arrNumbers.length; a++)
+      {
+         System.out.print(arrNumbers[a] + " ");
+      }
+      System.out.println("Reverse array: ");
+      // looping array in reverse order
+      for(int a = arrNumbers.length - 1; a >= 0; a--) 
+      {  
+         System.out.print(arrNumbers[a] + " ");  
+      }
+   }
+}
+
+
+Output:
+
+Given array:
+2 4 6 8 10
+Reverse array:
+10 8 6 4 2
