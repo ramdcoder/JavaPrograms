@@ -1,0 +1,19 @@
+Difference between for and for each loop in java
+
+[Difference between for and for each loop in java](https://www.flowerbrackets.com/difference-between-for-and-for-each-loop-in-java/)
+
+Here’s the program on difference between for–each and for loop.
+
+// One dimensional array using for loop
+int[] num = {2,4,6};
+for(int a = 0; a < num.length; a++)
+{
+   System.out.println(num[a]);
+}
+
+// One dimensional array using for-each loop
+int[] num = {2,4,6};
+for(int a :  num)
+{
+   System.out.println(a);
+}
