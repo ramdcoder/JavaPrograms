@@ -1,0 +1,29 @@
+Java code to rename all files in a folder
+
+[Java code to rename all files in a folder](https://www.flowerbrackets.com/java-code-to-rename-all-files-in-a-folder/)
+
+import java.io.File;
+public class RenameAllFilesDemo 
+{
+   public static void main(String[] args) 
+   {
+      // folder path 
+      String strPath = "D:\\Users\\sachin\\java\\sachinfolder";
+      // let's create new folder
+      File newfolder = new File(strPath);
+      File[] arrFile = newfolder.listFiles();
+      for(int a = 0; a < arrFile.length; a++) 
+      {
+         if(arrFile[a].isFile()) 
+         {
+            File file = new File(strPath + "\\" + arrFile[a].getName()); 
+            String strFileName = arrFile[a].getName(); 
+            String[] tokens = strFileName.split("\s"); 
+            String strNewFile = tokens[1]; 
+            System.out.println(strFileName); 
+            System.out.print(strNewFile);
+            file.renameTo(new File(strPath + "\" + strNewFile + ".pdf")); 
+         } 
+      }
+   }
+}
