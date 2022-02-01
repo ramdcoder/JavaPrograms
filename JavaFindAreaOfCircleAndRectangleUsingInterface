@@ -1,0 +1,38 @@
+Java program to find area of circle and rectangle using interface
+
+[Java program to find area of circle and rectangle using interface](https://www.flowerbrackets.com/java-program-to-find-area-of-circle-and-rectangle-using-interface/)
+
+Here’s java program.
+
+interface FindArea
+{    
+   double pi = 3.14159265359;    
+   double calculate(double a, double b);    
+}
+class Rectangle implements FindArea    
+{    
+   public double calculate(double a, double b)    
+   {    
+      return(a * b);    
+   }
+}
+class Circle implements FindArea    
+{    
+   public double calculate(double a, double b)    
+   {    
+      return(pi * a * a);    
+   }    
+}
+public class FindAreaUsingInterface 
+{
+   public static void main(String[] args) 
+   {
+      Rectangle rect = new Rectangle();    
+      Circle cir = new Circle();    
+      FindArea area;
+      area = rect;    
+      System.out.println("Area of rectangle is: " + area.calculate(50, 30));      
+      area = cir;    
+      System.out.println("Area of circle is: " + area.calculate(10, 10));
+   }
+}
