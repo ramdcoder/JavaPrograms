@@ -304,3 +304,5 @@ Let's learn basic java programs.
 [Java code to rename all files in a folder](https://www.flowerbrackets.com/java-code-to-rename-all-files-in-a-folder/)
 
 [Program to find area of rectangle using inheritance in java](https://www.flowerbrackets.com/program-to-find-area-of-rectangle-using-inheritance-in-java/)
+
+[Java program to find area of circle and rectangle using interface](https://www.flowerbrackets.com/java-program-to-find-area-of-circle-and-rectangle-using-interface/)
