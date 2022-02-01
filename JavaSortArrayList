@@ -1,0 +1,31 @@
+How to sort ArrayList in java
+
+[How to sort ArrayList in java](https://www.flowerbrackets.com/how-to-sort-an-arraylist-in-java/)
+
+import java.util.ArrayList;
+import java.util.Collections;
+public class SortArrayListAscendingOrder
+{
+   public static void main(String[] args) 
+   {
+      ArrayList<String> al = new ArrayList<String>();
+      al.add("Banana");
+      al.add("Pineapple");
+      al.add("Jackfruit");
+      al.add("Apple");
+      al.add("Mango");
+      // unsorted given list
+      System.out.println("ArrayList of Strings before sorting: ");
+      for(String count : al)
+      {
+         System.out.println(count);
+      }
+      Collections.sort(al);
+      // sorted list
+      System.out.println("ArrayList of Strings after sorting: ");
+      for(String str : al) 
+      {
+         System.out.println(str);
+      }
+   }
+}
