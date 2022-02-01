@@ -1,0 +1,22 @@
+Create Dynamic 2D array in java
+
+[Create Dynamic 2D array in java](https://www.flowerbrackets.com/create-dynamic-2d-array-in-java/)
+
+Here’s an example to create dynamic two dimensional array using List.
+
+import java.util.ArrayList;
+import java.util.List;
+public class Dynamic2dArray 
+{
+   public static void main(String[] args) 
+   {
+      List<int[]> li = new ArrayList<>();
+      li.add(new int[]{2,4,6});
+      li.add(new int[]{3,5});
+      li.add(new int[]{1});
+      // element at row 0, column 0
+      System.out.println("Element at [0][0]: " + li.get(0)[1]);
+      // get element at row : 1, column : 1
+      System.out.println("Element at [1][1]: " + li.get(1)[1]);
+   }
+}
