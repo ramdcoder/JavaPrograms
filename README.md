@@ -1,4 +1,5 @@
 # JavaPrograms
+
 Let's learn basic java programs.
 
 [Java program to calculate area of a circle](https://www.flowerbrackets.com/java-program-calculate-area-of-circle/)
@@ -314,3 +315,5 @@ Let's learn basic java programs.
 [Swap three variables in java without temporary variable](https://www.flowerbrackets.com/swap-three-variables-in-java-without-using-temporary-variable/)
 
 [Create Dynamic 2D array in java](https://www.flowerbrackets.com/create-dynamic-2d-array-in-java/)
+
+[How to sort ArrayList in java](https://www.flowerbrackets.com/how-to-sort-an-arraylist-in-java/)
