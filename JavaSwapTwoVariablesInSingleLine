@@ -1,0 +1,17 @@
+Swap two variables in java in single line
+
+[Swap two variables in java in single line](https://www.flowerbrackets.com/swap-two-variables-in-java-in-single-line/)
+
+Let’s see an example.
+
+public class SwapTwoVariablesInOneLine
+{
+   public static void main(String[] args)
+   {
+      int x = 23;
+      int y = 75;
+      System.out.println("Before swapping two numbers: x = " + x + " y = " + y);
+      x = x ^ y ^ (y = x);
+      System.out.println("After swapping two numbers: x = " + x + " y = " + y);
+   }
+}
