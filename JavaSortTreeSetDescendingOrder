@@ -1,0 +1,23 @@
+How to sort TreeSet in descending order in java
+
+[How to sort TreeSet in descending order in java](https://www.flowerbrackets.com/how-to-sort-treeset-in-descending-order-in-java/)
+
+import java.util.TreeSet;
+public class TreeSetExample 
+{
+   public static void main(String[] args) 
+   {
+      TreeSet<Object> number = new TreeSet<Object>(); 
+      number.add(1); 
+      number.add(24); 
+      number.add(15); 
+      number.add(6); 
+      number.add(9); 
+      number.add(2);
+      // reverse order using descendingSet()
+      TreeSet<Object> reverseOrder = (TreeSet<Object>)number.descendingSet();
+      // printing set 
+      System.out.println("Without using descendingSet() method: " + number); 
+      System.out.println("Using descendingSet() method: " + reverseOrder);
+   }
+}
