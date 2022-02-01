@@ -1,0 +1,36 @@
+Program to find area of rectangle using inheritance in java
+
+[Program to find area of rectangle using inheritance in java](https://www.flowerbrackets.com/program-to-find-area-of-rectangle-using-inheritance-in-java/)
+
+We can calculate area of rectangle using inheritance. Here’s an example.
+
+class RectangleDimension
+{
+   int length;
+   int breadth;
+}
+class Rectangle extends RectangleDimension
+{
+   int area;
+   void findArea()
+   {
+      area = length * breadth;
+   }
+}
+public class AreaOfRectangleUsingInheritance 
+{
+   public static void main(String[] args) 
+   {
+      Rectangle obj = new Rectangle();
+      obj.length = 50;
+      obj.breadth = 20;
+      obj.findArea();
+      int area = obj.length * obj.breadth;
+      System.out.println("Area of rectangle is: " + area);
+   }
+}
+
+
+Output:
+
+Area of rectangle is: 1000
