@@ -1,0 +1,26 @@
+TreeMap comparator() method in java with examples
+
+[TreeMap comparator() method in java with examples](https://www.flowerbrackets.com/java-treemap-comparator-method-example/)
+
+import java.util.Comparator;
+import java.util.NavigableMap;
+import java.util.TreeMap;
+public class TreemapComparatorExample 
+{
+   public static void main(String[] args) 
+   {
+      NavigableMap<Integer, String> nm = new TreeMap<Integer, String>();
+      // populating tree map
+      nm.put(101, "apple"); 
+      nm.put(102, "banana"); 
+      nm.put(103, "apricot"); 
+      nm.put(104, "blackberry"); 
+      nm.put(105, "avocado"); 
+      // printing TreeMap 
+      System.out.println("TreeMap: " + nm);
+      // using comparator() method
+      Comparator c = nm.comparator();
+      // print comparator value
+      System.out.println("Comparator value: " + c);
+   }
+}
