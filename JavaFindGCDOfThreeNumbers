@@ -1,0 +1,38 @@
+Find GCD of three numbers in java
+
+[Find GCD of three numbers in java](https://www.flowerbrackets.com/find-gcd-of-three-numbers-in-java/)
+
+Here’s an example on gcd or hcf of three numbers in java.
+
+import java.util.Scanner;
+public class GCDOfThreeNumbers 
+{
+   public static void main(String[] args) 
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter first number: ");
+      int number1 = sc.nextInt();
+      System.out.println("Please enter second number: ");
+      int number2 = sc.nextInt();
+      System.out.println("Please enter third number: ");
+      int number3 = sc.nextInt();
+      int gcdNumbers = GCDOfThreeNumbers.findGCD(number1, number2, number3);
+      System.out.println("GCD of three numbers " + number1 + ", " + number2 + " and " + number3 + " is: " + gcdNumbers);
+      sc.close();
+   }
+   public static int findGCD(int x, int y) 
+   {
+      if(y == 0)
+      {
+         return x;
+      }
+      else
+      {
+         return findGCD(y, x % y);
+      }
+   }
+   public static int findGCD(int x, int y, int z) 
+   {
+      return findGCD(findGCD(x, y), z);
+   }
+}
