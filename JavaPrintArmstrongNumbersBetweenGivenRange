@@ -1,0 +1,43 @@
+Java program to print armstrong numbers between given range
+
+[Java program to print armstrong numbers between given range](https://www.flowerbrackets.com/java-program-to-print-all-armstrong-numbers-between-given-range/)
+
+import java.util.Scanner;
+public class ArmstrongNumbersGivenRange 
+{
+   public static void main(String[] args) 
+   {
+      int number, startNumber, endNumber, a, rem, n, count = 0;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter starting number range: ");
+      startNumber = sc.nextInt();
+      System.out.println("Please enter ending number range: ");
+      endNumber = sc.nextInt();
+      for(a = startNumber + 1; a < endNumber; a++)
+      {
+         n = a;
+         number = 0;
+         while(n != 0)
+         {
+            rem = n % 10;
+            number = number + rem * rem * rem;
+            n = n / 10;
+         }
+         if(a == number)
+         {
+            if(count == 0)
+            {
+               System.out.println("Armstrong numbers between given range " + startNumber + " and " + endNumber + ": ");
+            }
+            System.out.print(a + "  ");
+            count++;
+         }
+      }
+      // if there is no Armstrong number found between range
+      if(count == 0)
+      {
+         System.out.println("Sorry!! There's no armstrong number between given range " + startNumber + " and " + endNumber);
+      }
+      sc.close();
+   }
+}
