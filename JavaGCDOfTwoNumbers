@@ -1,0 +1,28 @@
+GCD of two numbers in java
+
+[GCD of two numbers in java](https://www.flowerbrackets.com/gcd-of-two-numbers-in-java/)
+
+Let’s see java program,
+
+public class GCDUsingEuclideanAlgorithm
+{
+   static int gcdRecursion(int num1, int num2)
+   {
+      // each number divides 0
+      if(num1 == 0)
+         return num2;
+      if(num2 == 0)
+         return num1;
+      if(num1 == num2)
+         return num1;
+      // num1 is greater
+      if(num1 > num2)
+         return gcdRecursion(num1 - num2, num2);
+      return gcdRecursion(num1, num2 - num1);
+   }
+   public static void main(String[] args)
+   {
+      int num1 = 90, num2 = 57;
+      System.out.println("GCD of " + num1 +" and " + num2 + " is " + gcdRecursion(num1, num2));
+   }
+}
