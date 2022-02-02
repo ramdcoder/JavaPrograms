@@ -1,0 +1,25 @@
+How to remove last element from ArrayList in java
+
+[How to remove last element from ArrayList in java](https://www.flowerbrackets.com/how-to-remove-last-element-from-arraylist-in-java/)
+
+Here’s an example on remove(int index) to last element from arraylist.
+
+import java.util.ArrayList;
+import java.util.List;
+public class ArrayListRemoveLastElement
+{
+   public static void main(String[] args)
+   {
+      List<Integer> al = new ArrayList<>();
+      al.add(56);
+      al.add(28);
+      al.add(39);
+      al.add(59);
+      al.add(82);
+      // using size() method to find index of last element
+      int index = al.size() - 1;
+      // deleting last element by passing index
+      al.remove(index);
+      System.out.println("After remove last element from arraylist: " + al);
+   }
+}
