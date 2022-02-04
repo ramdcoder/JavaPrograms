@@ -1,0 +1,22 @@
+Arrange words of a sentence in alphabetical order in java
+
+[Arrange words of a sentence in alphabetical order in java](https://www.flowerbrackets.com/arrange-words-of-a-sentence-in-alphabetical-order-in-java/)
+
+import java.util.Set;
+import java.util.StringTokenizer;
+import java.util.TreeSet;
+public class ArrangeInAlphabeticalOrder 
+{
+   public static void main(String[] args) 
+   {
+      Set set = new TreeSet();
+      String strInput = "hi all welcome to flower brackets blog";
+      System.out.println("Before arranging sentence in alphabetical order: " + strInput);
+      StringTokenizer strToken = new StringTokenizer(strInput," ");
+      while(strToken.hasMoreElements())
+      {
+         set.add(strToken.nextElement());
+      }
+      System.out.println("After arranging sentence in alphabetical order: " + set);
+   }
+}
