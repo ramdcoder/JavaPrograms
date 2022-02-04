@@ -1,0 +1,22 @@
+Java do while loop with user input
+
+[Java do while loop with user input](https://www.flowerbrackets.com/java-do-while-loop-with-user-input/)
+
+ Here’s an example.
+
+import java.util.Scanner;
+public class DoWhileUserInput
+{
+   public static void main(String[] args) 
+   {
+      int number, total = 0;
+      Scanner sc = new Scanner(System.in);
+      do{
+          System.out.println("Please enter number: ");
+          number = sc.nextInt();
+          total += number;
+      }while (number != 0);  
+      System.out.println("Total is = " + total);
+      sc.close();
+   }
+}
