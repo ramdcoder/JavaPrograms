@@ -1,0 +1,45 @@
+How to remove duplicates from array in java without using collections
+
+[How to remove duplicates from array in java without using collections](https://www.flowerbrackets.com/how-to-remove-duplicates-from-array-in-java-without-using-collections/)
+
+import java.util.Arrays;
+public class WithoutUsingCollections
+{
+   static void removeDuplicateWithoutCollections(int[] arrDuplicate)
+   {
+      System.out.println("Before removing duplicates from array: ");
+      for(int a = 0; a < arrDuplicate.length; a++)
+      {
+         System.out.print(arrDuplicate[a] + " ");
+      }
+      int sizeUnique = arrDuplicate.length;
+      // compare each element with other element
+      for(int a = 0; a < sizeUnique; a++)
+      {
+         for(int b = a + 1; b < sizeUnique; b++)
+         {
+            // if any two numbers are equal
+            if(arrDuplicate[a] == arrDuplicate[b])
+            {
+               arrDuplicate[b] = arrDuplicate[sizeUnique - 1];
+               sizeUnique--;
+               b--;
+            }
+         }
+      }
+      int[] arrWithoutDuplicate = Arrays.copyOf(arrDuplicate, sizeUnique);
+      // print elements array without duplicate elements
+      System.out.println();
+      System.out.println("After removing duplicates from array: ");
+      for(int a = 0; a < arrWithoutDuplicate.length; a++)
+      {
+         System.out.print(arrWithoutDuplicate[a] + " ");
+      }
+      System.out.println();
+   }
+   public static void main(String[] args)
+   {
+      removeDuplicateWithoutCollections(new int[] {1, 3, 5, 1, 7, 9});
+      removeDuplicateWithoutCollections(new int[] {56, 85, 56, 85, 38, 28});
+   }
+}
