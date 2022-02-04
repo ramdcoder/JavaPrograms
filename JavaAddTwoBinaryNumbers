@@ -1,0 +1,41 @@
+Write a java program to add two binary numbers
+
+[Write a java program to add two binary numbers](https://www.flowerbrackets.com/write-a-java-program-to-add-two-binary-numbers/)
+
+Now let’s add two binary numbers in java.
+
+import java.util.Scanner;
+public class BinaryNumbers
+{
+   public static void main(String[] args)
+   {
+      long num1, num2;
+      int a = 0, carryover = 0;
+      // to store the result
+      int[] add = new int[10];
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter first binary number: ");
+      num1 = sc.nextLong();
+      System.out.print("Please enter second binary number: ");
+      num2 = sc.nextLong();
+      while(num1 != 0 || num2 != 0) 
+      {
+         add[a++] = (int)((num1 % 10 + num2 % 10 + carryover) % 2);
+         carryover = (int)((num1 % 10 + num2 % 10 + carryover) / 2);
+         num1 = num1 / 10;
+         num2 = num2 / 10;
+      }
+      if(carryover != 0)
+      {
+         add[a++] = carryover;
+      }
+      --a;
+      System.out.print("add two binary numbers: ");
+      while(a >= 0)
+      {
+         System.out.print(add[a--]);
+      }
+      System.out.print("\n");
+      sc.close();
+   }
+}
