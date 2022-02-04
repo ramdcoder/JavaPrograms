@@ -347,3 +347,5 @@ Let's learn basic java programs.
 [How to remove duplicates from array in java without using collections](https://www.flowerbrackets.com/how-to-remove-duplicates-from-array-in-java-without-using-collections/)
 
 [Java do while loop with user input](https://www.flowerbrackets.com/java-do-while-loop-with-user-input/)
+
+[Java program to add two numbers using bufferedreader](https://www.flowerbrackets.com/java-program-to-add-two-numbers-using-bufferedreader/)
