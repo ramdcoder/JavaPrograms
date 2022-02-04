@@ -1,0 +1,23 @@
+Java program to find smallest of three numbers using ternary operator
+
+[Java program to find smallest of three numbers using ternary operator](https://www.flowerbrackets.com/java-program-to-find-smallest-of-three-numbers-using-ternary-operator/)
+
+import java.util.Scanner;
+public class SmallestOfThreeNumbers 
+{
+   public static void main(String[] args) 
+   {
+      int number1, number2, number3, smallest, temp;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter first number: ");
+      number1 = sc.nextInt();
+      System.out.println("Please enter second number: ");
+      number2 = sc.nextInt();
+      System.out.println("Please enter third number: ");
+      number3 = sc.nextInt();
+      sc.close();
+      temp = number1 < number2 ? number1 : number2;
+      smallest = number3 < temp ? number3 : temp;
+      System.out.println("Smallest of three numbers using ternary operator: " + smallest);
+   }
+}
