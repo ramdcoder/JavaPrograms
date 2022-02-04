@@ -345,3 +345,5 @@ Let's learn basic java programs.
 [Java program to find maximum and minimum number without using array](https://www.flowerbrackets.com/java-program-to-find-maximum-and-minimum-number-without-using-array/)
 
 [How to remove duplicates from array in java without using collections](https://www.flowerbrackets.com/how-to-remove-duplicates-from-array-in-java-without-using-collections/)
+
+[Java do while loop with user input](https://www.flowerbrackets.com/java-do-while-loop-with-user-input/)
